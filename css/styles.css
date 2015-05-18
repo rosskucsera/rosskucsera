@@ -4,8 +4,8 @@ html {
 }
 
 body {
-	font-family: 'Mensch', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	font-weight: 100;
+	font-family: 'Open Sans', 'Mensch', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-weight: 300;
 	letter-spacing: 1px;
 	background-color: #f1f1f1;  
 }
