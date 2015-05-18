@@ -216,6 +216,12 @@ nav a.current {
 	animation: slideIn ease-in-out .6s;
 }
 
+#sidebar .slide-in #home a:visited {
+	left: 0px;
+	-webkit-animation: none;
+	animation: none;	
+}
+
 /* END styles for animations  */
 
 
