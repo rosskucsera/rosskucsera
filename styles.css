@@ -1,0 +1,227 @@
+/* START global styles */
+html {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Mensch', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-weight: 100;
+	letter-spacing: 1px;
+	background-color: #f1f1f1;  
+}
+/* END global styles */
+
+/* START styles for fixed sidebar */
+#sidebar {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	width: 280px;
+	margin: 0;
+	padding: 0;
+	background: white;
+	text-align: center;	
+	height: 100%;
+}
+
+#title {
+	overflow: hidden;
+	height: 275px;
+	border-bottom: 5px solid #f1f1f1;
+	background: cadetblue;
+	transition: background .04s ease-in-out;
+	-webkit-transition: background 0.04s ease-in-out;
+	-moz-transition: background 0.1s ease-in-out;
+	transition: background 0.1s ease-in-out;
+}
+
+#title:hover {
+	cursor: pointer;
+	background: darkcyan;
+}
+
+#title p {
+	position: absolute;
+  	top: 70px;
+	font-size: 72px;
+	color: white;
+	line-height: 65px;
+	letter-spacing: -2px;
+	margin: 0 auto;
+}
+
+nav {
+	width: 100%;
+}
+
+nav a {
+  	display: block;
+	height: 5em;
+	line-height: 5em;
+  	font-size:24px;
+  	text-decoration:none;
+	color: black;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	transition: background .04s ease-in-out;
+	-webkit-transition: background 0.04s ease-in-out;
+	-moz-transition: background 0.1s ease-in-out;
+	transition: background 0.1s ease-in-out;
+}
+
+nav a:hover{
+	background: whitesmoke;
+	color: #47a3da;
+}
+
+nav a.current {
+	background: gainsboro;
+	color: #47a3da;
+}
+/* START styles for fixed sidebar */
+
+
+/* START styles for content items */
+.content {
+	position: absolute;
+	left: 280px;
+	margin: 60px;
+	margin-top: 60px;
+	width: 870px;
+	overflow: hidden;
+}
+
+.content h1 {
+	font-size: 56px;
+	margin: 0px;
+  	padding-left: 0px;
+	padding-top: 0px;
+	font-weight: 100;
+}
+
+.shift-down {
+	margin-top: 230px;
+}
+
+.content p {
+	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-size: 22px;
+}
+
+/* END styles for content items */
+
+/* START styles for grid items */
+
+.card {
+	position: relative;
+	display: inline-block;
+	width: 260px;
+	height: 290px;
+	margin-right: 20px;
+	margin-top: 20px;
+	background: white;
+	border-bottom: 2px solid lightgray;
+	transition: background .04s ease-in-out;
+	-webkit-transition: background 0.04s ease-in-out;
+	-moz-transition: background 0.1s ease-in-out;
+	transition: background 0.1s ease-in-out;
+}
+
+.card:hover {
+	cursor: pointer;
+	background: whitesmoke;
+}
+
+.card img {
+	height: 200px;
+	width: 100%;
+	margin: 0px;
+	margin-bottom: 10px;
+	background-color: black;
+}
+
+.card-description {
+	position: absolute;
+	top: 200px;
+	padding: 20px;
+	padding-top: 0px;
+}
+
+.card-description h3 {
+	font-size: 20px;
+	font-family: 'Mensch', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-weight: 100;
+	margin: 0px;
+	margin-top: 10px;
+}
+
+.card p {
+	margin:0px;
+}
+
+/* END styles for grid items */
+
+/* START styles for animations  */
+
+/* Fade in animation  */
+@-webkit-keyframes fadeIn { 
+		from { opacity:0; } to { opacity:1; } 
+	}
+@-moz-keyframes fadeIn { 
+	from { opacity:0; } to { opacity:1; } 
+}
+@keyframes fadeIn { 
+	from { opacity:0; } to { opacity:1; } 
+}
+
+.fade-in {
+	opacity: 0;
+	-webkit-animation:fadeIn ease-in-out .5s; 
+	animation:fadeIn ease-in-out .5s;
+
+	-webkit-animation-fill-mode:forwards; 
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+
+.fade-first {
+	-webkit-animation-delay: 0.2s;
+	-moz-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+
+.fade-second {
+	-webkit-animation-delay: .5s;
+	-moz-animation-delay: .5s;
+	animation-delay: .5s;
+}
+
+/* Slide in animation  */
+@-webkit-keyframes slideIn { 
+		from { left:-280px; } to { left:0; } 
+	}
+@moz-keyframes slideIn {
+	from { left:-280px; } to { left:0; }
+}
+@keyframes slideIn {
+	from { left:-280px; } to { left:0; }
+}
+.slide-in {
+	left: -280px;
+	-webkit-animation: slideIn ease-in-out .6s;
+	animation: slideIn ease-in-out .6s;
+}
+
+/* END styles for animations  */
+
+
+/* START styles for viewport/responsive  */
+@viewport{
+    zoom: 1.0;
+    width: device-width;
+}
+/* END styles for animations  */
