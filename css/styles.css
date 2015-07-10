@@ -4,27 +4,30 @@ html {
 }
 
 body {
-	font-family: 'Mensch', 'Open Sans Condensed', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	font-weight: 300;
+	font-family: 'Dosis', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-weight: 200;
 	letter-spacing: 1px;
-	background-color: #f1f1f1;  
 }
 /* END global styles */
 
 /* START styles for fixed sidebar */
 #sidebar {
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	left: 0px;
 	overflow: hidden;
 	width: 280px;
 	margin: 0;
 	padding: 0;
-	background: white;
+	background: #f1f1f1;
 	text-align: center;	
 	height: 100%;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+}
+
+img {
+	margin: 20px 20px 20px 0px;
 }
 
 #title {
@@ -72,15 +75,15 @@ nav a {
 }
 
 nav a:hover{
-	background: whitesmoke;
-	color: #47a3da;
+	background: gainsboro;
+
 }
 
 nav a.current {
-	background: gainsboro;
-	color: #47a3da;
+	background-color: white;
+
 }
-/* START styles for fixed sidebar */
+/* END styles for fixed sidebar */
 
 
 /* START styles for content items */
@@ -89,17 +92,18 @@ nav a.current {
 	left: 280px;
 	margin: 60px;
 	margin-top: 60px;
-	width: 870px;
+	width: 900px;
 	overflow: hidden;
 }
 
 .content h1 {
 	font-size: 56px;
+	font-weight: 200;
+	line-height: 60px;
+	text-transform: uppercase;
 	margin: 0px;
   	padding-left: 0px;
 	padding-top: 0px;
-	font-weight: 100;
-	text-transform: uppercase;
 }
 
 .shift-down {
@@ -109,6 +113,10 @@ nav a.current {
 .content p {
 	font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	font-size: 22px;
+}
+
+.case-study {
+	margin-top: 120px 
 }
 
 /* END styles for content items */
@@ -122,8 +130,10 @@ nav a.current {
 	height: 290px;
 	margin-right: 20px;
 	margin-top: 20px;
+	padding-bottom: 10px;	
 	background: white;
 	border-bottom: 2px solid lightgray;
+	background-color: #f1f1f1;
 	transition: background .04s ease-in-out;
 	-webkit-transition: background 0.04s ease-in-out;
 	-moz-transition: background 0.1s ease-in-out;
@@ -152,17 +162,106 @@ nav a.current {
 
 .card-description h3 {
 	font-size: 20px;
-	font-family: 'Mensch', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	font-weight: 100;
-	margin: 0px;
-	margin-top: 10px;
-}
-
-.card p {
-	margin:0px;
+	font-family: 'Dosis', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin: 10px 0px;
 }
 
 /* END styles for grid items */
+
+/* START styles for case studies */
+
+.back {
+	position: absolute;
+	left: 280px;
+	width: 240px;
+	background-color: #f1f1f1;
+	color: black;
+	padding: 20px 0px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	height: 20px;	
+	transition: background-color .1s ease-in-out;
+}
+
+.back:hover{
+	background-color: gainsboro;
+}
+
+.case-study {
+	margin-top: 120px 
+}
+
+.case-study p {
+	width: 600px;
+}
+
+.left-case-study {
+	float: left;
+}
+
+.before-details {
+	font-size: 28px;
+}
+
+.case-study .img-before-details {
+	width: 600px;
+}
+
+.case-study img {
+	width: 100%;
+	margin-top: 10px;
+}
+
+.case-study-details {
+    float: right;
+    width: 200px;
+    padding: 0px 20px 20px 20px;
+	background-color: cadetblue;
+	color: white;
+}
+
+.case-study-details .title {
+	font-family: 'Dosis', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.case-study-details .description {
+	display: inline;
+    font-size: 16px;
+    line-height: 14px;
+}
+
+.case-study-details ul {
+	list-style: none;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.case-study-details li {
+	padding: 5px;
+	margin-bottom: 8px;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Dosis', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-align: center;
+    color: cadetblue;
+}
+
+.case-study-details li:last-child {
+	margin-bottom: 0px;
+	}
+
+/* END styles for case studies */
 
 /* START styles for animations  */
 
