@@ -132,17 +132,17 @@ nav a.current {
 	margin-top: 20px;
 	padding-bottom: 10px;	
 	background: white;
-	border-bottom: 2px solid lightgray;
 	background-color: #f1f1f1;
 	transition: background .04s ease-in-out;
 	-webkit-transition: background 0.04s ease-in-out;
 	-moz-transition: background 0.1s ease-in-out;
-	transition: background 0.1s ease-in-out;
+	transition: background color 0.2s ease-in-out;
 }
 
 .card:hover {
 	cursor: pointer;
-	background: whitesmoke;
+	background-color: gainsboro;
+	color: white;
 }
 
 .card img {
@@ -328,8 +328,5 @@ nav a.current {
 
 
 /* START styles for viewport/responsive  */
-@viewport{
-    zoom: 1.0;
-    width: device-width;
-}
+
 /* END styles for animations  */
