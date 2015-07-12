@@ -18,7 +18,7 @@ nav {
 	display: flex;
 	flex-direction: column;
 	background-color: #f1f1f1;
-	min-width: 280px;
+	min-width: 260px;
 	height: 100vh; 
   	text-transform: uppercase;
   	text-align: center;
@@ -49,6 +49,7 @@ nav a.current {
 
 .main {
 	margin: 20px;
+	max-width: 700px
 }
 /* END global styles */
 
@@ -61,7 +62,9 @@ nav a.current {
     nav {
         flex-direction: row;
         height: 2.5em;
+        overflow-x: scroll;
     } 
+    
     nav a {
     	height: 1.5em;
     	border-bottom: 0px solid white;
