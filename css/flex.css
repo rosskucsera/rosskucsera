@@ -14,13 +14,58 @@ body {
 	flex-direction: row;
 }
 
-.sidebar {
+nav {
+	display: flex;
+	flex-direction: column;
 	background-color: #f1f1f1;
 	min-width: 280px;
 	height: 100vh; 
+  	text-transform: uppercase;
+  	text-align: center;
+  	transition: flex-direction .2s ease-in-out;
+}
+
+nav a {
+	height: 5em;
+	line-height: 5em;
+  	font-size: 1.5em;
+  	text-decoration: none;
+	color: black;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	transition: background .04s ease-in-out;
+	-webkit-transition: background 0.04s ease-in-out;
+	-moz-transition: background 0.1s ease-in-out;
+	transition: background 0.1s ease-in-out;
+}
+
+nav a:hover{
+	background: gainsboro;
+
+}
+
+nav a.current {
+	background-color: white;
 }
 
 .main {
 	margin: 20px;
 }
 /* END global styles */
+
+
+/* START responsive styles */
+@media screen and (max-width:500px) {
+    .container {
+        flex-direction: column;
+    }
+    nav {
+        flex-direction: row;
+        height: 2.5em;
+    } 
+    nav a {
+    	height: 1.5em;
+    	border-bottom: 0px solid white;
+    	line-height: 1.5em;
+    	flex: 1 1 auto;
+    }        
+}
