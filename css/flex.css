@@ -54,7 +54,7 @@ nav a.current {
 
 
 /* START responsive styles */
-@media screen and (max-width:430px) {
+@media screen and (max-width:600px) {
     .container {
         flex-direction: column;
     }
