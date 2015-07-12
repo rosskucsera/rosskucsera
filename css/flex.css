@@ -10,25 +10,16 @@ body {
 }
 
 .container {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;  
+	display: flex;
 	flex-direction: row;
 }
 
 nav {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	background-color: #f1f1f1;
 	min-width: 260px;
-	height: 100vh;
-	width: 40%
+	height: 100vh; 
   	text-transform: uppercase;
   	text-align: center;
   	transition: flex-direction .2s ease-in-out;
@@ -58,7 +49,7 @@ nav a.current {
 
 .main {
 	margin: 20px;
-	width: 60%;
+	max-width: 700px
 }
 /* END global styles */
 
@@ -78,6 +69,6 @@ nav a.current {
     	height: 1.5em;
     	border-bottom: 0px solid white;
     	line-height: 1.5em;
-    	flex: 1;
+    	flex: 1 1 auto;
     }        
 }
