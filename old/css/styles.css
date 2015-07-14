@@ -72,7 +72,6 @@ nav a {
 	transition: background .04s ease-in-out;
 	-webkit-transition: background 0.04s ease-in-out;
 	-moz-transition: background 0.1s ease-in-out;
-	transition: background 0.1s ease-in-out;
 }
 
 nav a:hover{
