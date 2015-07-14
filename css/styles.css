@@ -1,0 +1,310 @@
+/* START global styles */
+html {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Dosis', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-weight: 200;
+	letter-spacing: 1px;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	background-color: #f1f1f1;
+	min-width: 260px;
+	max-width: 380px;
+	min-height: 100vh;
+  	text-transform: uppercase;
+  	text-align: center;
+  	transition: flex-direction .2s ease-in-out;
+}
+
+nav a {
+	height: 5em;
+	line-height: 5em;
+  	font-size: 1.5em;
+  	text-decoration: none;
+	color: black;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	transition: background-color .2s ease-in-out;
+	-webkit-transition: background-color .2s ease-in-out;
+	-moz-transition: background-color .2s ease-in-out;
+	transition: background-color .2s ease-in-out;
+}
+
+nav a:hover{
+	background: gainsboro;
+
+}
+
+nav a.current {
+	background-color: white;
+}
+
+.main {
+	margin: 20px 20px 20px 50px;
+	max-width: 800px
+}
+
+h1 {
+    font-size: 4.0em;
+    font-weight: 200;
+    line-height: 1.0em;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.main p {
+	font-size: 2.0em;
+	font-weight: 200;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;	
+	height: 275px;
+    border-bottom: 5px solid #f1f1f1;
+    background-color: cadetblue;
+}
+
+.title p {
+    font-size: 4.0em;
+    font-weight: 300;
+    line-height: 1.0em;	
+    color: white;
+}
+
+.title:hover {
+	cursor: default;
+	background-color: cadetblue;
+}
+
+/* END global styles */
+
+/* START styles for cards and grid  */
+
+.grid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+}
+
+.card {
+	width: 240px;
+	height: 290px;
+	margin-right: 20px;
+	margin-top: 20px;
+	padding-bottom: 10px;	
+	border: 1px solid #f1f1f1;
+	color: black;
+	flex:1 0 auto;
+	transition: border color .1s ease-in-out;
+	-webkit-transition: color .1s ease-in-out;
+	-moz-transition: color .1s ease-in-out;
+}
+
+.card:last-child {
+	flex:0 0 auto;
+}
+
+.card:hover {
+	cursor: pointer;
+	color: cadetblue;
+}
+
+.card:hover img{
+	height: 180px;
+}
+
+.card img {
+	height: 200px;
+	width: 100%;
+	margin: 0px;
+	margin-bottom: 10px;
+	background-color: black;
+	transition: height .2s ease-in-out;
+}
+
+.card-description {
+	padding: 20px;
+	padding-top: 0px;
+}
+
+.card-description h3 {
+	font-size: 20px;
+	font-family: 'Dosis', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin: 0px;
+}
+
+.back {
+	max-width: 180px;
+	background-color: #f1f1f1;
+	padding: 20px;
+	margin: -20px 0px 40px -50px;
+	transition: background-color .1s ease-in-out;
+}
+
+.back a {
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.back:hover{
+	background-color: gainsboro;
+	cursor: pointer;
+}
+
+/* END styles for cards and grid  */
+
+/* START styles for Case Studies  */
+.case-study-details {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    padding: 20px;
+    margin-bottom: 40px;
+	background-color: cadetblue;
+	color: white;
+}
+
+h3.case-study-title {
+	font-family: 'Dosis', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+p.case-study-description {
+    font-size: 16px;
+    line-height: 18px;
+    margin-right: 40px;
+}
+
+.case-study-details ul {
+	list-style: none;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.case-study-details li {
+	padding: 5px;
+	margin-bottom: 8px;
+	min-width: 170px;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Dosis', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-align: center;
+    color: cadetblue;
+}
+
+p.overview {
+	margin-top: 16px;
+}
+
+p.caption {
+	margin-top: 16px;
+	font-size: 20px;
+}
+
+/* END styles for Case Studies  */
+
+/* START styles for animations  */
+
+/* Fade in animation  */
+@-webkit-keyframes fadeIn { 
+		from { opacity:0; } to { opacity:1; } 
+	}
+@-moz-keyframes fadeIn { 
+	from { opacity:0; } to { opacity:1; } 
+}
+@keyframes fadeIn { 
+	from { opacity:0; } to { opacity:1; } 
+}
+
+.fade-in {
+	opacity: 0;
+	-webkit-animation:fadeIn ease-in-out .5s; 
+	animation:fadeIn ease-in-out .5s;
+
+	-webkit-animation-fill-mode:forwards; 
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+
+.fade-first {
+	-webkit-animation-delay: 0.2s;
+	-moz-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+
+.fade-second {
+	-webkit-animation-delay: .5s;
+	-moz-animation-delay: .5s;
+	animation-delay: .5s;
+}
+
+/* START responsive styles */
+@media screen and (max-width:600px) {
+    .container {
+        flex-direction: column;
+    }
+    nav {
+        flex-direction: row;
+        height: 2.25em;
+        min-height: auto;
+    } 
+    
+    nav a {
+    	height: 1.5em;
+    	border-bottom: 0px solid white;
+    	line-height: 1.5em;
+    	flex: 1 1 auto;
+    }  
+
+    .main {
+    	margin: 10px;
+    }  
+
+    .back {
+    	margin-left: -10px;
+    }
+
+    .card {
+	margin: 10px; 
+	}
+	
+	.card:last-child {
+	flex: auto;
+	}
+}
+
+@media screen and (max-width:975px) {
+	.case-study-details {
+		flex-direction: column;
+	}
+    
+    p.case-study-description {
+    	margin-right: 0px;
+    }    
+}
