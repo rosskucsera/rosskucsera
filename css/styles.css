@@ -87,6 +87,10 @@ h1 {
 	background-color: cadetblue;
 }
 
+.main img {
+	flex: 0 1 auto;
+}
+
 /* END global styles */
 
 /* START styles for cards and grid  */
