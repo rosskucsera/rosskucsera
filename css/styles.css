@@ -88,6 +88,8 @@ h1 {
 }
 
 .main img {
+	width: 100%;
+	height: auto;
 	flex: 0 1 auto;
 }
 
@@ -98,7 +100,7 @@ h1 {
 .grid {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	flex-flow: row wrap;
 	margin-bottom: 40px;
 }
 
@@ -116,9 +118,9 @@ h1 {
 	-moz-transition: color .1s ease-in-out;
 }
 
-.card:last-child {
+/*.card:last-child {
 	flex:0 0 auto;
-}
+}*/
 
 .card:hover {
 	cursor: pointer;
@@ -222,8 +224,15 @@ p.overview {
 	margin-top: 16px;
 }
 
+.img-with-caption{
+	padding: 10px;
+	border: 1px solid gainsboro;
+	margin-bottom: 40px;
+}
+
 p.caption {
-	margin-top: 16px;
+    margin-top: 16px;
+    border-top: 1px solid gainsboro;
 	font-size: 20px;
 }
 
@@ -306,9 +315,14 @@ p.caption {
 @media screen and (max-width:975px) {
 	.case-study-details {
 		flex-direction: column;
+		align-items: flex-start;
 	}
     
     p.case-study-description {
     	margin-right: 0px;
-    }    
+    }
+
+    .case-study-details li {
+    	min-width: 100%;
+    }
 }
