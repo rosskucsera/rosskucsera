@@ -10,11 +10,23 @@ body {
 }
 
 .container {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+  	-webkit-box-orient: vertical;
+	-webkit-flex-direction: row;
 	display: flex;
 	flex-direction: row;
 }
 
 nav {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+  	-webkit-box-orient: vertical;
+	-webkit-flex-direction: column;
 	display: flex;
 	flex-direction: column;
 	background-color: #f1f1f1;
@@ -23,7 +35,6 @@ nav {
 	min-height: 100vh;
   	text-transform: uppercase;
   	text-align: center;
-  	transition: flex-direction .2s ease-in-out;
 }
 
 nav a {
@@ -70,8 +81,13 @@ h1 {
 }
 
 .title {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+  	-webkit-box-orient: vertical;
+	-webkit-flex-direction: column;
 	display: flex;
-	flex-direction: column;
     align-items: center;
     justify-content: center;	
 	height: 275px;
@@ -102,6 +118,7 @@ h1 {
 	width: 100%;
 	height: auto;
 	flex: 0 1 auto;
+	-webkit-flex: 0 1 auto;
 }
 
 /* END global styles */
@@ -109,8 +126,13 @@ h1 {
 /* START styles for cards and grid  */
 
 .grid {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+  	-webkit-box-orient: horizontal;
+	-webkit-flex-direction: row;
 	display: flex;
-	flex-direction: row;
 	flex-flow: row wrap;
 	margin-bottom: 40px;
 }
@@ -134,7 +156,11 @@ h1 {
 	margin-top: 20px;
 	padding-bottom: 10px;	
 	border: 1px solid #f1f1f1;
-	flex:1 0 auto;
+	-webkit-box-flex: 1 0 auto;
+	-moz-box-flex: 1 0 auto;
+	-webkit-flex: 1 0 auto;
+	-ms-flex: 1 0 auto;
+	flex: 1 0 auto;
 }
 
 /*.card:last-child {
@@ -197,8 +223,13 @@ h1 {
 
 /* START styles for Case Studies  */
 .case-study-details {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+  	-webkit-box-orient: horizontal;
+	-webkit-flex-direction: row;
 	display: flex;
-	flex-direction: row;
 	align-items: center;
     padding: 20px;
     margin-bottom: 40px;
@@ -313,6 +344,7 @@ p.caption {
     	border-bottom: 0px solid white;
     	line-height: 1.5em;
     	flex: 1 1 auto;
+    	-webkit-flex:: 1 1 auto;
     }  
 
     .main {
@@ -329,6 +361,7 @@ p.caption {
 	
 	.card:last-child {
 	flex: auto;
+	-webkit-flex: auto;
 	}
 }
 
