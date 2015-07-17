@@ -139,6 +139,11 @@ p.job-title {
 	color: white;
 }
 
+p.gray {
+	background-color: gainsboro;
+	color: black;
+}
+
 p.job-company {
 	font-weight: 300;
 }
@@ -155,6 +160,10 @@ span.job-date {
 
 p.job-title, p.job-company, p.description {
 	margin: 10px 0px;
+}
+
+.job ul {
+	margin-top: 5px;
 }
 
 /* END styles for job descriptions  */
