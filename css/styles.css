@@ -123,6 +123,43 @@ h1 {
 
 /* END global styles */
 
+/* START styles for job descriptions  */
+
+.job-description {
+	margin-left: 10px;
+	margin-bottom: 40px;
+}
+
+p.job-title {
+	font-size: 20px;
+	font-weight: 300;
+	text-transform: uppercase;
+	background-color: cadetblue;
+	padding: 8px;
+	color: white;
+}
+
+p.job-company {
+	font-weight: 300;
+}
+
+span.job-date {
+	margin-left: 20px;
+	text-transform: none;
+}
+
+.job-description p{
+	font-size: 22px;
+	margin: 0px;
+}
+
+p.job-title, p.job-company, p.description {
+	margin: 10px 0px;
+}
+
+/* END styles for job descriptions  */
+
+
 /* START styles for cards and grid  */
 
 .grid {
