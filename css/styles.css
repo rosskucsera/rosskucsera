@@ -10,24 +10,16 @@ body {
 }
 
 .container {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
 	display: -webkit-flex;
-  	-webkit-box-orient: vertical;
-	-webkit-flex-direction: row;
 	display: flex;
+	-webkit-flex-direction: row;
 	flex-direction: row;
 }
 
 nav {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
 	display: -webkit-flex;
-  	-webkit-box-orient: vertical;
-	-webkit-flex-direction: column;
 	display: flex;
+	-webkit-flex-direction: column;
 	flex-direction: column;
 	background-color: #f1f1f1;
 	min-width: 260px;
@@ -81,13 +73,10 @@ h1 {
 }
 
 .title {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
 	display: -webkit-flex;
-  	-webkit-box-orient: vertical;
+  	display: flex;
 	-webkit-flex-direction: column;
-	display: flex;
+	flex-direction: column;
     align-items: center;
     justify-content: center;	
 	height: 275px;
@@ -117,8 +106,8 @@ h1 {
 .main img {
 	width: 100%;
 	height: auto;
-	flex: 0 1 auto;
 	-webkit-flex: 0 1 auto;
+	flex: 0 1 auto;
 }
 
 /* END global styles */
@@ -172,13 +161,10 @@ p.job-title, p.job-company, p.description {
 /* START styles for cards and grid  */
 
 .grid {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
 	display: -webkit-flex;
-  	-webkit-box-orient: horizontal;
-	-webkit-flex-direction: row;
 	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
 	flex-flow: row wrap;
 	margin-bottom: 40px;
 }
@@ -202,10 +188,7 @@ p.job-title, p.job-company, p.description {
 	margin-top: 20px;
 	padding-bottom: 10px;	
 	border: 1px solid #f1f1f1;
-	-webkit-box-flex: 1 0 auto;
-	-moz-box-flex: 1 0 auto;
 	-webkit-flex: 1 0 auto;
-	-ms-flex: 1 0 auto;
 	flex: 1 0 auto;
 }
 
@@ -216,10 +199,6 @@ p.job-title, p.job-company, p.description {
 .card:hover {
 	cursor: pointer;
 	color: cadetblue;
-}
-
-.card:hover img{
-	height: 180px;
 }
 
 .card img {
@@ -269,13 +248,10 @@ p.job-title, p.job-company, p.description {
 
 /* START styles for Case Studies  */
 .case-study-details {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
 	display: -webkit-flex;
-  	-webkit-box-orient: horizontal;
+  	display: flex;
 	-webkit-flex-direction: row;
-	display: flex;
+	flex-direction: row;
 	align-items: center;
     padding: 20px;
     margin-bottom: 40px;
@@ -375,44 +351,62 @@ p.caption {
 }
 
 /* START responsive styles */
-/*@media screen and (max-width:600px) {
+@media screen and (max-width:600px) {
     .container {
+        -webkit-flex-direction: column;
         flex-direction: column;
     }
-    nav {
-        flex-direction: row;
-        height: 2.25em;
+ 	nav {
         min-height: auto;
+    }
+
+nav a {
+    	height: 3em;
+    	line-height: 3em;
     } 
-    
-    nav a {
-    	height: 1.5em;
-    	border-bottom: 0px solid white;
-    	line-height: 1.5em;
-    	flex: 1 1 auto;
-    	-webkit-flex:: 1 1 auto;
-    }  
+
+    .title {
+    	height: 80px;
+    }
+
+    .title p {
+    	font-size: 3em;
+    }
+
+    .title p img {
+    	display: none;
+    }
 
     .main {
     	margin: 10px;
     }  
 
-    .back {
-    	margin-left: -10px;
+    .main p {
+    	font-size: 1.5em;
+    }
+
+    h1 {
+    	font-size: 3em;
+    }
+
+    .grid {
+    	-webkit-flex-direction: column;
+    	flex-direction: column;
+    	align-items: center;
     }
 
     .card {
-	margin: 10px; 
-	}
-	
-	.card:last-child {
-	flex: auto;
-	-webkit-flex: auto;
-	}
+
+    }
+    
+    .back {
+    	margin-left: -10px;
+    }
 }
 
 @media screen and (max-width:975px) {
 	.case-study-details {
+		-webkit-flex-direction: column;
 		flex-direction: column;
 		align-items: flex-start;
 	}
@@ -424,4 +418,4 @@ p.caption {
     .case-study-details li {
     	min-width: 100%;
     }
-}*/
+}
