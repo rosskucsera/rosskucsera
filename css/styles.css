@@ -375,7 +375,7 @@ p.caption {
 }
 
 /* START responsive styles */
-@media screen and (max-width:600px) {
+/*@media screen and (max-width:600px) {
     .container {
         flex-direction: column;
     }
@@ -424,4 +424,4 @@ p.caption {
     .case-study-details li {
     	min-width: 100%;
     }
-}
+}*/
