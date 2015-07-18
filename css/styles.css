@@ -190,7 +190,7 @@ p.job-title, p.job-company, p.description {
 	margin-right: 20px;
 	margin-top: 20px;
 	padding-bottom: 10px;	
-	border: 1px solid #f1f1f1;
+	border: 1px solid lightgray;
 }
 
 /*.card:last-child {
@@ -202,18 +202,26 @@ p.job-title, p.job-company, p.description {
 	color: cadetblue;
 }
 
+.work-thumbnail {
+	height:200px;
+	overflow: hidden;
+	transition: height .2s ease-in-out;
+}
+
+.card:hover .work-thumbnail {
+	height: 160px;
+}
+
 .card img {
 	height: 200px;
 	width: 240px;
 	margin: 0px;
-	margin-bottom: 10px;
-	background-color: black;
 	transition: height .2s ease-in-out;
 }
 
 .card-description {
 	padding: 20px;
-	padding-top: 0px;
+	padding-top: 10px;
 }
 
 .card-description h3 {
