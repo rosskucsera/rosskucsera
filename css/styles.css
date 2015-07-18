@@ -79,7 +79,8 @@ h1 {
 	flex-direction: column;
     -webkit-align-items: center;
     align-items: center;
-    justify-content: center;	
+    -webkit-justify-content: center;
+    justify-content: center;
 	height: 275px;
     border-bottom: 5px solid #f1f1f1;
     background-color: cadetblue;
