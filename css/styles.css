@@ -121,6 +121,10 @@ h1 {
 	margin-bottom: 40px;
 }
 
+.objective {
+	margin-top: 5px;
+}
+
 p.job-title {
 	font-size: 20px;
 	font-weight: 300;
@@ -155,6 +159,35 @@ p.job-title, p.job-company, p.description {
 
 .job ul {
 	margin-top: 5px;
+}
+
+.skills {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+
+.skills ul {
+	list-style: none;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 40px;
+}
+
+.skills li {
+	padding: 5px;
+	margin-bottom: 8px;
+	min-width: 170px;
+    background-color: cadetblue;
+    border-radius: 5px;
+    font-family: 'Dosis', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-align: center;
+    color: white;
 }
 
 /* END styles for job descriptions  */
