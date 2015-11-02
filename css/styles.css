@@ -116,13 +116,50 @@ h1 {
 
 /* START styles for job descriptions  */
 
+.collapse {
+	display: none;
+}
+
+.collapse.in {
+	display: block;
+}
+
+.collapsing {
+	position:relative;
+	height:0;
+	overflow:hidden;
+	-webkit-transition-timing-function:ease;
+	-o-transition-timing-function:ease;
+	transition-timing-function:ease;
+	-webkit-transition-duration:.35s;
+	-o-transition-duration:.35s;
+	transition-duration:.35s;
+	-webkit-transition-property:height,visibility;
+	-o-transition-property:height,visibility;
+	transition-property:height,visibility;
+}
+
+.cv-section {
+	border-top: 1px solid #f1f1f1;
+	padding: 20px 10px;
+	cursor: pointer;
+}
+
+.cv-section .case-study-title.collapsed:after {
+	font-family: "Pe-icon-7-stroke";
+	content: "\e689";
+	float: right;
+}
+
+.cv-section .case-study-title:after {
+	font-family: "Pe-icon-7-stroke";
+	content: "\e683";
+	float: right;
+}
+
 .job-description {
 	margin-left: 10px;
 	margin-bottom: 40px;
-}
-
-.objective {
-	margin-top: 5px;
 }
 
 p.job-title {
@@ -189,6 +226,8 @@ p.job-title, p.job-company, p.description {
     text-align: center;
     color: white;
 }
+
+
 
 /* END styles for job descriptions  */
 
@@ -308,7 +347,8 @@ p.job-title, p.job-company, p.description {
 
 h3.case-study-title {
 	font-family: 'Dosis', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 200;
     text-transform: uppercase;
     margin: 0px;
 }
