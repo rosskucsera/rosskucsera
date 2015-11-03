@@ -7,6 +7,8 @@ body {
 	font-family: 'Dosis', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	font-weight: 200;
 	letter-spacing: 1px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -15,6 +17,11 @@ body {
 	-webkit-flex-direction: row;
 	flex-direction: row;
 }
+
+/*.sidebar {
+	position: fixed;
+	left: 0;
+}*/
 
 nav {
 	display: -webkit-flex;
@@ -53,7 +60,8 @@ nav a.current {
 
 .main {
 	margin: 20px 20px 20px 50px;
-	max-width: 800px
+	max-width: 800px;
+/*	padding-left: 430px;*/
 }
 
 h1 {
