@@ -16,12 +16,20 @@ body {
 	display: flex;
 	-webkit-flex-direction: row;
 	flex-direction: row;
+	padding-left: 380px;
 }
 
-/*.sidebar {
+.sidebar {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
 	position: fixed;
 	left: 0;
-}*/
+	min-width: 260px;
+	max-width: 380px;
+	min-height: 100vh;
+}
 
 nav {
 	display: -webkit-flex;
@@ -29,9 +37,6 @@ nav {
 	-webkit-flex-direction: column;
 	flex-direction: column;
 	background-color: #f1f1f1;
-	min-width: 260px;
-	max-width: 380px;
-	min-height: 100vh;
   	text-transform: uppercase;
   	text-align: center;
 }
@@ -488,13 +493,21 @@ p.caption {
     .container {
         -webkit-flex-direction: column;
         flex-direction: column;
+        padding-left: 0px;
     }
  	nav {
         min-height: 300px;
         max-width: 800px
     }
 
-nav a {
+    .sidebar {
+    	position: relative;
+    	min-height: 20px;
+    	width: 100%;
+    	max-width: 100%;
+    }
+
+	nav a {
     	height: 3em;
     	line-height: 3em;
     } 
@@ -516,12 +529,16 @@ nav a {
     }  
 
     .main p {
-    	font-size: 1.5em;
+    	font-size: 1.2em;
     	line-height: 1.0em;
     }
 
     h1 {
-    	font-size: 3em;
+    	font-size: 2em;
+    }
+
+    h3.case-study-title {
+    	font-size: 18px;
     }
 
     .grid {
