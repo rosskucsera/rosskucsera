@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="stylesheet" type="text/css" href="css/escrivo-test.css">
+  <link rel="stylesheet" type="text/css" href="css/alt-escrivo-test.css">
   <link rel="stylesheet" type="text/css" href="css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
   <link rel="stylesheet" type="text/css" href="css/pe-icon-7-stroke/css/helper.css"> 
   <link href='http://fonts.googleapis.com/css?family=Dosis:200,300' rel='stylesheet' type='text/css'>
@@ -25,64 +25,18 @@
 
   ga('create', 'UA-65247768-1', 'auto');
   ga('send', 'pageview');
-</script>
+</script> 
 </head>
 <body>
-	<div id="employee-portal">
-		<div id="tabs-container">
-			<ul role="tablist">
-			<li role="presentation" class="active"><a href="#equipment" aria-controls="home" role="tab" data-toggle="tab"><i class="pe-7s-tools pe-lg pe-fw"></i>Equipment</a></li>
-			<li role="presentation" class=""><a href="#instructions" aria-controls="instructions" role="tab" data-toggle="tab"><i class="pe-7s-info pe-lg pe-fw"></i>Instructions</a></li>
-			<li role="presentation" class=""><a href="#location" aria-controls="location" role="tab" data-toggle="tab"><i class="pe-7s-map-marker pe-lg pe-fw"></i>Location</a></li>
-			</ul>
-		</div>
-	  <div class="tab-content content-area">
-	    <div role="tabpanel" class="tab-pane fade active in" id="equipment">
-	    	<img src="http://placehold.it/80x80">
-	    	<img src="http://placehold.it/160x80">
-	    	<img src="http://placehold.it/100x90">
-	    	<img src="http://placehold.it/140x90">
-	    	<img src="http://placehold.it/130x80">
-	    	<img src="http://placehold.it/110x80">
-	    	<img src="http://placehold.it/80x80">
-	    	<img src="http://placehold.it/160x80">
-	    	<img src="http://placehold.it/100x90">
-	    	<img src="http://placehold.it/140x90">
-	    	<img src="http://placehold.it/130x80">
-	    	<img src="http://placehold.it/110x80">
-	    	<img src="http://placehold.it/80x80">
-	    	<img src="http://placehold.it/160x80">
-	    	<img src="http://placehold.it/100x90">
-	    	<img src="http://placehold.it/140x90">
-	    	<img src="http://placehold.it/130x80">
-	    	<img src="http://placehold.it/110x80">
-	    	<img src="http://placehold.it/80x80">
-	    	<img src="http://placehold.it/160x80">
-	    	<img src="http://placehold.it/100x90">
-	    	<img src="http://placehold.it/140x90">
-	    	<img src="http://placehold.it/130x80">
-	    	<img src="http://placehold.it/110x80">
-	    </div>
-	    <div role="tabpanel" class="tab-pane fade" id="instructions">
-	    	<p>Listen. Strange women lying in ponds distributing swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony. I'm not a witch.</p>
-	    	<p>We want a shrubbery!! Bloody Peasant! Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods. Bring her forward!</p>
-	    	<p>Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods. And the hat. She's a witch! Listen. Strange women lying in ponds distributing swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.</p>
-	    </div>
-	    <div role="tabpanel" class="tab-pane fade" id="location">
-	    	<div class="map"><iframe margin="10px" width="280px" height="300" src="http://www.maps.ie/create-google-map/map.php?width=100%&amp;height=300&amp;hl=en&amp;q=EH1%201SX+(Escrivo)&amp;ie=UTF8&amp;t=&amp;z=13&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="http://www.maps.ie/create-google-map/">Google Maps HTML</a> by <a href="http://www.maps.ie/">Maps.ie</a></iframe></div><br />
-	    </div>
-	  </div>
-	</div>
- 
- 	<!-- <div id="employee-portal">
+ 	<div id="employee-portal">
  		<div id="tabs-container">
-			<div class="tab active">
+			<div role="presentation" class="tab active"><a href="#equipment" aria-controls="home" role="tab" data-toggle="tab">
 				<a class="collapsed" data-toggle="tab" data-target="#equipment" id="instructions-tab"><i class="pe-7s-tools pe-lg pe-fw"></i><br/>Equipment</a>
 			</div>
-			<div class="tab tab2" >
+			<div role="presentation" class="tab"><a href="#instructions" aria-controls="home" role="tab" data-toggle="tab" >
 				<a class="collapsed" data-toggle="tab" data-target="#instructions" id="instructions-tab"><i class="pe-7s-info pe-lg pe-fw"></i><br/>Instructions</a>
 			</div>
-			<div class="tab tab3">
+			<divrole="presentation" class="tab"><a href="#equipment" aria-controls="home" role="tab" data-toggle="tab">
 				<a class="collapsed" data-toggle="tab" data-target="#location" id="instructions-tab"><i class="pe-7s-map-marker pe-lg pe-fw"></i><br/>Location</a>
 			</div>
 		</div>
@@ -114,9 +68,15 @@
 				<img src="http://placehold.it/110x80">
 			</div>
 			<div id="instructions" class="collapse">
-				<p>Listen. Strange women lying in ponds distributing swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony. I'm not a witch.</p>
-				<p>We want a shrubbery!! Bloody Peasant! Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods. Bring her forward!</p>
-				<p>Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods. And the hat. She's a witch! Listen. Strange women lying in ponds distributing swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure</p>
+				<p>Dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation</p>
 			</div>
 			<div id="location" class="collapse in">
 				<div class="map">
@@ -124,6 +84,6 @@
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 </body>
 </html>
