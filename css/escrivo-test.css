@@ -1,0 +1,123 @@
+/*094705 - green
+0A5453 - blue
+F95C1C - orange
+DDFF1C - yellow
+F9251C - red*/
+
+
+#employee-portal {
+	max-width: 300px;
+	position: absolute;
+	right: 150px;
+	top: 200px;
+}
+
+/* Tab styles */
+
+#tabs-container {
+	background-color: rgba(249, 92, 28, .2);
+	height: 56px;
+	cursor: pointer;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+#tabs-container ul {
+	margin: 0;
+	width: 100%;
+	padding: 20px 0px;
+	list-style-type: none;
+}
+
+#tabs-container li {
+	display: inline;
+	width: 33%;
+	color: black;
+}
+
+#tabs-container li.active a{
+	background-color: #f95c1c;
+}
+
+#tabs-container a {
+	color: black;
+	width: 100px;
+	padding: 20px 6px;
+	text-decoration: none;
+}
+
+#tabs-container a:hover  {
+	background-color: #f95c1c;
+}
+
+
+/* Tab Content styles */
+
+.content-area {
+	max-height: 320px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-size: 16px;
+	border: 2px solid #f1f1f1;
+}
+
+.content-area img {
+	margin: 2px;
+}
+
+#equipment, #instructions{
+	margin: 10px 10px;
+}
+
+#equipment {
+    text-align: center;
+}
+
+.map {
+	margin-left: 20px;
+}
+
+/* responsive styles */
+
+@media screen and (max-width:600px) {
+    #employee-portal {
+    	max-width: 100%;
+		position: relative;
+		right: 0px;
+		top: 0px;
+    }
+ }
+
+
+/* Rev 1 Unused styles */
+
+/*.tab {
+	width: 100px;
+	padding: 10px;
+	border-right: 1px solid #f1f1f1;
+	color: black;
+	text-decoration: none;
+	transition: background-color .2s ease-in-out;
+}
+
+.tab:hover {
+	background-color: rgba(249, 92, 28, .2);
+}
+
+.tab:last-child {
+	border-right: none;
+	padding-right: 0px;
+}
+
+.tab a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.tab.active {
+	background-color: #f95c1c;
+	color: white;
+}*/
