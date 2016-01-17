@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'texgyreadventorbold';
+    src: url('fonts/texgyreadventor_bold_macroman/texgyreadventor-bold-webfont.eot');
+    src: url('fonts/texgyreadventor_bold_macroman/texgyreadventor-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/texgyreadventor_bold_macroman/texgyreadventor-bold-webfont.woff') format('woff'),
+         url('fonts/texgyreadventor_bold_macroman/texgyreadventor-bold-webfont.ttf') format('truetype'),
+         url('fonts/texgyreadventor_bold_macroman/texgyreadventor-bold-webfont.svg#texgyreadventorbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'texgyreadventorregular';
+    src: url('fonts/texgyreadventor_regular_macroman/texgyreadventor-regular-webfont.eot');
+    src: url('fonts/texgyreadventor_regular_macroman/texgyreadventor-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/texgyreadventor_regular_macroman/texgyreadventor-regular-webfont.woff') format('woff'),
+         url('fonts/texgyreadventor_regular_macroman/texgyreadventor-regular-webfont.ttf') format('truetype'),
+         url('fonts/texgyreadventor_regular_macroman/texgyreadventor-regular-webfont.svg#texgyreadventorregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.adventorbold-font {
+	font-family: texgyreadventorbold;
+	color: black;
+}
+
+/* START global styles */
+html {
+  box-sizing: border-box;	
+  background: url(../imgs/hash.gif) fixed;
+  background-image: url("../imgs/hash.gif");
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+}
+
+body {
+	font-family: texgyreadventorregular, Arial, Helvetica, sans-serif;
+	letter-spacing: 1px;
+	font-weight: 400;
+	color: #3c3c3c;
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.orange {
+	color: #ed6c05;
+	font-weight: 400;
+}
+
+h1 {
+	font-family: texgyreadventorbold;
+	font-size: 60px;
+	margin: 20px 0px;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	margin: 30px 0px 20px 0px;
+}
+
+h3 {
+	font-size: 18px;
+	margin: 10px 0px;
+}
+
+.tiny-link {
+	font-size: 10px;
+	color: #3c3c3c;
+	text-decoration: underline;
+}
+
+#header-block {
+	background-color: white;
+	padding: 20px 40px;
+}
+
+#header-block img {
+	width: 40%;
+}
+
+.header-text {
+	width: 500px;
+    margin: 0 auto;
+}
+
+#typed-block {
+	background-color: #ed6c05;
+	color: white;
+	padding: 40px;
+}
+
+#typed-block p {
+	margin: 0px;
+	font-size: 40px;
+	line-height: 44px;
+}
+
+#doughnut-block {
+	position: relative;
+	height: 350px;
+	background-color: #e0e0e0;
+	padding: 80px;
+}
+
+#doughnut-block img {
+    margin-top: 100px;
+}
+
+/*START Typed styles */
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
