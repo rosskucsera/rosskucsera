@@ -278,6 +278,10 @@ p.job-title, p.job-company, p.description {
 	border: 1px solid lightgray;
 }
 
+.project {
+	height: 190px;
+}
+
 /*.card:last-child {
 	flex:0 0 auto;
 }*/
@@ -315,6 +319,10 @@ p.job-title, p.job-company, p.description {
 	font-weight: 300;
 	text-transform: uppercase;
 	margin: 0px;
+}
+
+.card-description p {
+	font-size: 14px;
 }
 
 .back {
@@ -400,7 +408,8 @@ p.overview {
 .img-with-caption{
 	padding: 10px;
 	border: 1px solid gainsboro;
-	margin-bottom: 40px;
+	margin-top: 10px;
+	margin-bottom: 30px;
 }
 
 p.caption {
