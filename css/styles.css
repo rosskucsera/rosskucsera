@@ -158,7 +158,6 @@ h1 {
 }
 
 .cv-section {
-	cursor: pointer;
 	margin: 20px 0;
 }
 
@@ -418,7 +417,6 @@ p.caption {
     background-color: #f1f1f1;
     padding: 10px;
     margin-bottom: 0;
-<<<<<<< HEAD
 
 }
 
@@ -451,57 +449,6 @@ p.caption {
 
 
 @media only screen and (max-width : 768px) {
-=======
-
-}
-
-/* END styles for Case Studies  */
-
-/* START responsive styles */
-
-@media only screen and (max-width : 975px) {
-
-	.container {
-		padding-left: 260px;
-	}
-
-	.title {
-		height: 235px;
-	}
-
-	.title p {
-		font-size: 30px;
-	}
-
-	.case-study-details {
-		-webkit-flex-direction: column;
-		flex-direction: column;
-	}
-    
-    p.case-study-description {
-    	margin-right: 0px;
-    }
-
-    .case-study-details li {
-    	min-width: 100%;
-    }
-}
-
-
-@media only screen and (max-width : 768px) {
-	
-	.container {
-		padding-left: 260px;
-	}
-
-	.sidebar {
-		max-width: 300px;
-	}
-
-}
-
-@media only screen and (max-width : 667px) {
->>>>>>> origin/gh-pages
 	
 	.container {
 		-webkit-flex-direction: column;
@@ -535,11 +482,7 @@ p.caption {
 		display: none;
 	}
 
-<<<<<<< HEAD
 	.title {
-=======
-    .title {
->>>>>>> origin/gh-pages
 		height: 120px;
 		border-bottom: none;
 		width: 25%;
@@ -564,11 +507,7 @@ p.caption {
 
     .main {
 		margin: 0;
-<<<<<<< HEAD
 		padding: 10px;
-=======
-		padding: 30px;
->>>>>>> origin/gh-pages
     }  
 
     .main p {
@@ -580,7 +519,6 @@ p.caption {
     	font-size: 2em;
     }
 
-<<<<<<< HEAD
 	.case-study-details {
 		-webkit-flex-direction: column;
 		flex-direction: column;
@@ -589,15 +527,6 @@ p.caption {
 
     h3.case-study-title {
 		font-size: 18px;
-=======
-    h3.case-study-title {
-    	font-size: 18px;
-    }
-
-    .back {
-    	margin-left: -10px;
-    	margin-top: 10px;
->>>>>>> origin/gh-pages
     }
 
     .case-study-details div {
