@@ -11,6 +11,10 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+p {
+	margin: 10px 0;
+}
+
 .container {
 	display: -webkit-flex;
 	display: flex;
@@ -56,6 +60,7 @@ nav a {
 
 nav a:hover{
 	background: gainsboro;
+	text-decoration: underline;
 
 }
 
@@ -64,9 +69,9 @@ nav a.current {
 }
 
 .main {
-	margin: 20px 20px 20px 50px;
+	margin: 0px;
+	padding: 20px;
 	max-width: 800px;
-/*	padding-left: 430px;*/
 }
 
 h1 {
@@ -153,35 +158,26 @@ h1 {
 }
 
 .cv-section {
-	border-top: 1px solid #f1f1f1;
-	padding: 20px 10px;
 	cursor: pointer;
+	margin: 20px 0;
 }
 
-.cv-section .case-study-title.collapsed:after {
-	font-family: "Pe-icon-7-stroke";
-	content: "\e689";
-	float: right;
-}
-
-.cv-section .case-study-title:after {
-	font-family: "Pe-icon-7-stroke";
-	content: "\e683";
-	float: right;
+.cv-section .case-study-title {
+    background-color: white;
+	font-weight: bold;
+	padding: 0;
 }
 
 .job-description {
-	margin-left: 10px;
-	margin-bottom: 40px;
+	margin: 10px 0 20px 0;
 }
 
 p.job-title {
+	background-color: #f1f1f1;
 	font-size: 20px;
-	font-weight: 300;
-	text-transform: uppercase;
-	background-color: cadetblue;
+    font-weight: 300;
 	padding: 8px;
-	color: white;
+	text-transform: uppercase;
 }
 
 p.gray {
@@ -200,7 +196,7 @@ span.job-date {
 
 .job-description p{
 	font-size: 22px;
-	margin: 0px;
+	margin: 10px 0;
 }
 
 p.job-title, p.job-company, p.description {
@@ -208,7 +204,7 @@ p.job-title, p.job-company, p.description {
 }
 
 .job ul {
-	margin-top: 5px;
+	margin: 5px 0 0 0;
 }
 
 .skills {
@@ -282,17 +278,13 @@ p.job-title, p.job-company, p.description {
 	height: 190px;
 }
 
-/*.card:last-child {
-	flex:0 0 auto;
-}*/
-
 .card:hover {
 	cursor: pointer;
 	color: cadetblue;
 }
 
 .work-thumbnail {
-	height:200px;
+	height: 200px;
 	overflow: hidden;
 	transition: height .2s ease-in-out;
 }
@@ -329,7 +321,7 @@ p.job-title, p.job-company, p.description {
 	max-width: 180px;
 	background-color: #f1f1f1;
 	padding: 20px;
-	margin: -20px 0px 40px -50px;
+	margin: -20px 0px 40px -20px;
 	transition: background-color .1s ease-in-out;
 }
 
@@ -343,6 +335,7 @@ p.job-title, p.job-company, p.description {
 .back:hover{
 	background-color: gainsboro;
 	cursor: pointer;
+	text-decoration: underline;
 }
 
 /* END styles for cards and grid  */
@@ -353,12 +346,11 @@ p.job-title, p.job-company, p.description {
   	display: flex;
 	-webkit-flex-direction: row;
 	flex-direction: row;
-	align-items: center;
-	-webkit-align-items: center;
+	align-items: flex-start;
+	-webkit-align-items: flex-start;
     padding: 20px;
     margin-bottom: 40px;
-	background-color: cadetblue;
-	color: white;
+    background-color: #f1f1f1;
 }
 
 .case-study-details div {
@@ -371,7 +363,13 @@ h3.case-study-title {
     font-size: 24px;
     font-weight: 200;
     text-transform: uppercase;
-    margin: 0px;
+	margin: 0px;
+    padding: 20px 20px 0 20px;
+    background-color: #f1f1f1;
+}
+
+.case-study-details h3.case-study-title {
+	padding: 0;
 }
 
 p.case-study-description {
@@ -391,119 +389,74 @@ p.case-study-description {
 	padding: 5px;
 	margin-bottom: 8px;
 	min-width: 170px;
-    background-color: white;
+    background-color: cadetblue;
     border-radius: 5px;
-    font-family: 'Dosis', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-family: 'Dosis', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-weight: bold;
     text-transform: uppercase;
-    font-weight: 300;
     letter-spacing: 0px;
     text-align: center;
-    color: cadetblue;
+    color: white;
 }
 
 p.overview {
-	margin-top: 16px;
+	padding: 20px;
+    background-color: #f1f1f1;
+    margin: 0;
+    border-bottom: 1px solid white;
 }
 
 .img-with-caption{
-	padding: 10px;
 	border: 1px solid gainsboro;
 	margin-top: 10px;
 	margin-bottom: 30px;
 }
 
 p.caption {
-    margin-top: 16px;
-    border-top: 1px solid gainsboro;
-	font-size: 20px;
+	margin-top: 16px;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 0;
+
 }
 
 /* END styles for Case Studies  */
 
-/* START styles for animations  */
-
-/* Fade in animation  */
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@keyframes slideInLeft {
-  0% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
-
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.slide-in-left {
-  -webkit-animation-name: slideInLeft;
-  animation-name: slideInLeft;
-}
-
-@-webkit-keyframes slideInRight {
-  0% {
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@-webkit-keyframes fadeIn { 
-		from { opacity:0; } to { opacity:1; } 
-	}
-@-moz-keyframes fadeIn { 
-	from { opacity:0; } to { opacity:1; } 
-}
-@keyframes fadeIn { 
-	from { opacity:0; } to { opacity:1; } 
-}
-
-.fade-in {
-	opacity: 0;
-	-webkit-animation:fadeIn ease-in-out .5s; 
-	animation:fadeIn ease-in-out .5s;
-
-	-webkit-animation-fill-mode:forwards; 
-	-moz-animation-fill-mode:forwards;
-	animation-fill-mode:forwards;
-
-	-webkit-animation-duration:1s;
-	-moz-animation-duration:1s;
-	animation-duration:1s;
-}
-
-.fade-first {
-	-webkit-animation-delay: 0.2s;
-	-moz-animation-delay: 0.2s;
-	animation-delay: 0.2s;
-}
-
-.fade-second {
-	-webkit-animation-delay: .5s;
-	-moz-animation-delay: .5s;
-	animation-delay: .5s;
-}
-
 /* START responsive styles */
-@media screen and (max-width:600px) {
-    .container {
-        -webkit-flex-direction: column;
-        flex-direction: column;
-        padding-left: 0px;
+
+@media only screen and (max-width : 975px) {
+
+	.container {
+		padding-left: 260px;
+	}
+
+	.title {
+		height: 235px;
+	}
+
+	.title p {
+		font-size: 30px;
+	}
+
+    p.case-study-description {
+    	margin-right: 0px;
     }
+
+    .case-study-details li {
+    	min-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width : 768px) {
+	
+	.container {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		padding-left: 0;
+	}
+	
  	nav {
         min-height: 300px;
         max-width: 800px
@@ -511,30 +464,51 @@ p.caption {
 
     .sidebar {
     	position: relative;
-    	min-height: 20px;
+		min-height: 20px;
+		height: 100px;
     	width: 100%;
-    	max-width: 100%;
+		max-width: 100%;
+		flex-direction: row;
     }
 
 	nav a {
-    	height: 3em;
-    	line-height: 3em;
-    } 
+    	font-size: 16px;
+		border-bottom: none;
+		width: 25%;
+		height: 100%;
+		line-height: 100px;
+	} 
+	
+	.sidebar a i {
+		display: none;
+	}
 
-    .title {
-    	height: 120px;
+	.title {
+		height: 120px;
+		border-bottom: none;
+		width: 25%;
+		height: 100%;
     }
 
     .title p {
-    	font-size: 3em;
+    	font-size: 16px;
     }
 
     .title img {
     	display: none;
     }
 
+	.back {
+		margin: 0 0 20px;
+    }
+
+}
+
+@media only screen and (max-width : 667px) {
+
     .main {
-    	margin: 10px;
+		margin: 0;
+		padding: 10px;
     }  
 
     .main p {
@@ -546,48 +520,25 @@ p.caption {
     	font-size: 2em;
     }
 
+	.case-study-details {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+    
+
     h3.case-study-title {
-    	font-size: 18px;
-    }
-
-    .grid {
-    	-webkit-flex-direction: column;
-    	flex-direction: column;
-    	-webkit-align-items: center;
-    	align-items: center;
-    }
-
-    .card {
-
-    }
-
-    .back {
-    	margin-left: -10px;
-    	margin-top: 10px;
+		font-size: 18px;
     }
 
     .case-study-details div {
-    	align-items: 1;
-
+		margin-bottom: 10px;
+	}
+	
+	.case-study-details div:last-of-type {
+		margin-bottom: 0;
     }
 
     p.caption {
     	font-size: 1.0em;
-    }
-}
-
-@media screen and (max-width:975px) {
-	.case-study-details {
-		-webkit-flex-direction: column;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-    
-    p.case-study-description {
-    	margin-right: 0px;
-    }
-
-    .case-study-details li {
-    	min-width: 100%;
     }
 }
