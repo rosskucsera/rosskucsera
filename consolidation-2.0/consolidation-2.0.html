@@ -1,0 +1,298 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Consolidation 2.0</title>
+  <link type="text/css" rel="stylesheet" href="https://www.standardlife.co.uk/secure/customer-platform/css/header-footer.css">
+  <link rel="stylesheet" type="text/css" href="css/angular-form.css">
+  <style> .back {
+      max-width: 180px;
+      background-color: #f1f1f1;
+      padding: 20px;
+      margin: -20px 0px 40px -20px;
+      transition: background-color .1s ease-in-out;
+    }
+    
+    .back a {
+      color: black;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Dosis', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+    
+    .back:hover{
+      background-color: gainsboro;
+      cursor: pointer;
+      text-decoration: underline;
+    }</style>
+</head>
+
+<body>
+  <div class="back">
+    <a href="../case-studies/stepped-journey.html" title="See all of my case study projects" alt="">< Back to case study</a>
+  </div>
+  <div id="page-header">
+  </div>
+  <div id="page-content">
+    <div class="dls_grid6" id="form">
+      <h2>Pension being transferred from:</h2>
+      <form>
+        <div id="transferBasics" class="form-section">
+          <h3>Let's start with some basic details</h3>
+          <p class="help-text">Usually you can find these details on a recent statement.</p>
+          <div class="inputGroup">
+            <div class="more-info">
+              <span class="more-info-trigger"></span>
+              <div class="more-info-content">More info about this is here and here.</div>
+            </div>
+            <input class="prepend" type="text" id="valueTransferInput" oninput="addValues()" required>
+            <span class="amount">£</span><label>Pension amount</label>
+            <span class="bar"></span>
+          </div>
+          <div class="inputGroup">
+            <div class="more-info">
+              <span class="more-info-trigger"></span>
+              <div class="more-info-content">More info about this is here and here.</div>
+            </div>
+            <input type="text" required>
+            <label>Provider name</label>
+            <span class="bar"></span>
+          </div>
+          <div class="inputGroup">
+            <div class="more-info">
+              <span class="more-info-trigger"></span>
+              <div class="more-info-content">More info about this is here and here.</div>
+            </div>
+            <input type="text" id="policyTransferInput" required>
+            <label>Policy Number</label>
+            <span class="bar"></span>
+          </div>
+          <div id="successMessageBasics" class="hide animated fadeInUp">
+            <p>Thank you. Next, we need to check your plan’s status.</p>
+          </div>
+        </div>
+
+        <div id="transferStatus" class="form-section hidden-form-section">
+          <h3>Status of pension</h3>
+          <div class="inputs">
+            <div class="radioInputGroup">
+              <div class="more-info">
+                <span class="more-info-trigger"></span>
+                <div class="more-info-content">More info about this is here and here.</div>
+              </div>
+              <p class="question-title">Is this pension in drawdown?</p>
+              <div class="radioButtonGroup">
+                <div class="radioButton">
+                  <input type="radio" id="drawdown-yes" name="drawdown" />
+                  <label for="drawdown-yes">Yes</label>
+                </div>
+                <div class="radioButton">
+                  <input type="radio" id="drawdown-no" name="drawdown" />
+                  <label for="drawdown-no">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="radioInputGroup">
+              <div class="more-info">
+                <span class="more-info-trigger"></span>
+                <div class="more-info-content">More info about this is here and here.</div>
+              </div>
+              <p class="question-title">Is this pension part of a divorce?</p>
+              <div class="radioButtonGroup">
+                <div class="radioButton">
+                  <input type="radio" id="divorce-yes" name="divorce" />
+                  <label for="divorce-yes">Yes</label>
+                </div>
+                <div class="radioButton">
+                  <input type="radio" id="divorce-no" name="divorce" />
+                  <label for="divorce-no">No</label>
+                </div>
+              </div>
+            </div>
+            <div id="successMessageGuarantees" class="hide animated fadeInUp">
+              <p>Finally, let’s check for guarantees or benefits.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="transferGuarantees" class="form-section hidden-form-section">
+          <h3>Guarantees and benefits to consider</h3>
+          <div class="inputs">
+            <p class="help-text">It may be easiest to call Provider for help with this section. To know what to ask for, <a href="#">download this PDF</a>.</p>
+            <div class="checkboxInputGroup">
+              <p class="question-title">Does this pension have any of these guarantees?</p>
+              <div class="checkboxGroup" id="guarantees-1">
+                <div class="more-info">
+                  <span class="more-info-trigger"></span>
+                  <div class="more-info-content">
+                    <h4>Why it’s good to have</h4>
+                    <p class="small">It’s your employer’s responsibility to make sure there’s enough money to pay you in retirement, not
+                    yours. These pensions are now very rare and provide guarantees that are hard to beat.</p>
+                    <h4>Am I likely to have it?</h4>
+                    <p class="small">It’s more likely if you’re older and you’ve worked for larger employers. Check your annual pension
+                    statement for the words “final salary” or “defined benefits”</p>
+                  </div>
+                </div>
+                <div class="checkboxButton">
+                  <input type="checkbox" id="guarantees-defined-benefits" name="guarantees" />
+                  <label for="guarantees-defined-benefits"><span class="checkbox">Defined benefits</span></label>
+                </div>
+              </div>
+              <div class="checkboxGroup" id="guarantees-2">
+                <div class="more-info">
+                  <span class="more-info-trigger"></span>
+                  <div class="more-info-content">
+                      <h4>Why it’s good to have</h4>
+                      <p class="small">Your money is guaranteed to grow at
+                          a given rate. These guarantees can be 0% (you get back at least what you paid in), or can be higher (e.g. 4% a year). If you transfer early your value may be reduced if your funds have grown less than the guaranteed rate. This is called a “Market Value Reduction.”</p>
+                      <h4>Am I likely to have it?</h4>
+                      <p class="small">Investment guarantees are more common on older pensions but can still be offered today. Check your annual statement – do any fund names contain the word “guaranteed” or “With Profits”?</p>
+                    </div>
+                </div>
+                <div class="checkboxButton guarantee-question">
+                  <input type="checkbox" id="guarantees-investment-guarantees" name="guarantees" />
+                  <label for="guarantees-investment-guarantees"><span class="checkbox">Investment guarantees</span></label>
+                </div>
+              </div>
+              <div class="checkboxGroup" id="guarantees-3">
+                <div class="more-info">
+                  <span class="more-info-trigger"></span>
+                  <div class="more-info-content">
+                      <h4>Why it’s good to have</h4>
+                      <p class="small">These typically provide a far higher retirement income than can be
+                          bought today. They have restrictions though (e.g. guaranteed rates may only apply on a certain date like your 65th or 75th birthday).</p>
+                      <h4>Am I likely to have it?</h4>
+                      <p class="small">Guaranteed annuity rates are most common on individual pensions (so not workplace pensions) started before July 1988, although some sold since then can have them too.</p>
+                      <p class="small">You’re most likely to have a guaranteed minimum pension or other safeguarded bene ts if you were in a  nal salary scheme and your bene ts were transferred to another plan for you.</p>
+                    </div>
+                </div>
+                <div class="checkboxButton">
+                  <input type="checkbox" id="guarantees-guaranteed-annuity-options" name="guarantees" />
+                  <label for="guarantees-guaranteed-annuity-options"><span class="checkbox">Guaranteed annuity options</span></label>
+                </div>
+              </div>
+              <div class="checkboxGroup" id="guarantees-4">
+                <div class="checkboxButton">
+                  <input type="checkbox" id="guarantees-none" name="guarantees" />
+                  <label for="guarantees-none"><span class="checkbox">None of these</span></label>
+                </div>
+              </div>
+            </div>
+            <div class="checkboxInputGroup">
+              <p class="question-title">Does this pension have offer any of these benefits?</p>
+              <div class="checkboxGroup" id="benefits-1">
+                <div class="more-info">
+                  <span class="more-info-trigger"></span>
+                  <div class="more-info-content">
+                      <h4>Why it’s good to have</h4>
+                      <p class="small">Quite simply, it means you could pay less tax when you start taking money out of your pension.</p>
+                      <h4>Am I likely to have it?</h4>
+                      <p class="small">You could have this if you were in a pension scheme before April 2006.</p>
+                    </div>
+                </div>
+                <div class="checkboxButton">
+                  <input type="checkbox" id="benefits-enhanced-tax-free-cash" name="benefits" />
+                  <label for="benefits-enhanced-tax-free-cash"><span class="checkbox">Enhanced tax-free cash</span></label>
+                </div>
+              </div>
+              <div class="checkboxGroup" id="benefits-2">
+                <div class="more-info">
+                  <span class="more-info-trigger"></span>
+                  <div class="more-info-content">
+                    <p class="small">A few people can retire before the normal retirement age of 55. These are often people in specialist occupations (e.g. professional footballers).</p>
+                  </div>
+                </div>
+                <div class="checkboxButton">
+                  <input type="checkbox" id="benefits-protected-pension-age" name="benefits" />
+                  <label for="benefits-protected-pension-age"><span class="checkbox">Protected pension age</span></label>
+                </div>
+              </div>
+              <div class="checkboxGroup" id="benefits-3">
+                <div class="more-info">
+                  <span class="more-info-trigger"></span>
+                  <div class="more-info-content">
+                      <p class="small">Some pensions have other bene ts (e.g. life insurance), which can
+                      be lost on transfer. You may be able to purchase equivalent cover elsewhere, but if you’re in ill
+                      health you should check before transferring.</p>
+                    </div>
+                </div>
+                <div class="checkboxButton">
+                  <input type="checkbox" id="benefits-life-cover" name="benefits" />
+                  <label for="benefits-life-cover"><span class="checkbox">Life cover</span></label>
+                </div>
+              </div>
+              <div class="checkboxGroup" id="benefits-4">
+                <div class="more-info">
+                  <span class="more-info-trigger"></span>
+                  <div class="more-info-content small">
+                      <p class="small">Make sure an employer isn’t paying into the pension you’re transferring, otherwise you could lose future contributions. Usually employers stop paying in when you stop working for them.</p>   
+                      </div>
+                </div>
+                <div class="checkboxButton">
+                  <input type="checkbox" id="benefits-workplace-contributions" name="benefits" />
+                  <label for="benefits-workplace-contributions"><span class="checkbox">Workplace contributions</span></label>
+                </div>
+              </div>
+              <div class="checkboxGroup" id="benefits-5">
+                <div class="checkboxButton">
+                  <input type="checkbox" id="benefits-none" name="benefits" />
+                  <label for="benefits-none"><span class="checkbox">None of these</span></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div id="review-link" class="hidden-form-section">
+        <span class="link-cta"><a href="#">Review and continue</a></span>
+        <p class="help-text">You'll be able to review everything before your transfer starts.</p>
+      </div>
+    </div>
+    <div id="ledger" class="dls_grid6">
+      <div id="transfer-to">
+        <h2>Pension being transferred to:</h2>
+        <div class="info-box">
+          <div class="current_pensionInfo">
+            <h3>Group Flexible Retirement Plan</h3>
+            <p>D2372466000</p>
+            <p class="help-text dls_grid9">This is your current pension account with us.</p>
+          </div>
+          <div class="current_pensionBenefits">
+            <ul>
+              <li>Workplace discount</li>
+              <li>Online access</li>
+              <li>Other benefit 3</li>
+              <li>Another benefit name here</li>
+              <li>Last benefit 5</li>
+            </ul>
+          </div>
+          <div class="current_pensionValue">
+            <div class="dls_grid4">
+              <p>Current Value</p>
+              <p class="valuePurple">£<span id="valueCurrent">100000</span></p>
+            </div>
+            <div id="toValueTransfer" class="dls_grid4 hide">
+              <p>Transfer value</p>
+              <p class="valueGreen">£<span id="valueTransfer"></span></p>
+            </div>
+            <div id="toValueTotal" class="dls_grid4 hide">
+              <p>New value</p>
+              <p class="valuePurple">£<span id="valueNew"></span></p>
+            </div>
+          </div>
+        </div>
+        <div id="help-box" class="hide animated fadeInUp">
+          <p class="dls_grid6 small">Our transfer experts are here to lend a hand if you need help.</p>
+          <div class="dls_grid6">
+            <p class="call">Call <span class="bold">0800 123 4567</></p>
+            <p class="chat"><a href="#">Chat now</a></p>
+            <img src="img/customer-service.png">
+          </div>
+        </div>      
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/angular-form.js"></script>
+</body>
+</html>

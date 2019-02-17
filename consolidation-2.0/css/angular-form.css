@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    font-weight: lighter;
+    box-sizing: border-box;
+    font-family: StandardLife-Light_Beta5, Arial, Helvetica, sans-serif;
+}
+
+#page-header {
+    margin: 0 auto;
+    padding: 0;
+    width: 960px;
+}
+
+#breadcrumb {
+    margin-bottom: 20px;
+}
+
+#page-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    padding-left: 0;
+}
+
+.dls_grid12, .dls_grid9, .dls_grid6, .dls_grid4, .dls_grid3 {
+    display: inline-block;
+    float: left;
+}
+
+.dls_grid12 {
+    width: 100%;
+}
+
+.dls_grid9 {
+    width: 75%;
+}
+
+.dls_grid6 {
+    width: 50%;
+}
+
+.dls_grid4 {
+    width: 33.3%;
+}
+
+.dls_grid3 {
+    width: 25%;
+}
+
+/* text styles */
+
+h1, h2, h3, h4 {
+    color: #0a2f73;
+    margin: 0;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+    user-select: none;
+}
+
+h4 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+p {
+    font-size: 16px;
+    color: #4b4b4b
+}
+
+a {
+    color: #147cb3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.bold {
+    font-family: standardlife-regular,Arial,san-serif;
+}
+
+.small {
+    font-size: 14px;
+    color: #4b4b4b
+}
+
+.help-text {
+    font-size: 12px;
+    color: #4b4b4b
+}
+
+.valuePurple {
+    color: #6e3694;
+}
+
+.valueGreen {
+    color: #008616;
+}
+
+.valuePurple, .valueGreen{
+    font-size: 22px;
+}
+
+.link-cta a{
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.link-cta a:hover {
+    text-decoration: underline;
+}
+
+span.link-cta::after {
+    content: ' >';
+    font-size: 24px;
+    text-decoration: none;
+    color: #ffbb00;
+}
+
+.hidden-form-section .link-cta a {
+    cursor: not-allowed;
+}
+
+/* default state */
+
+#form {
+    max-width: 460px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: lighter;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 12px;
+    transition: 0.2s ease-in-out top, 0.2s ease-in-out left;
+}
+
+.question-title {
+    color: #0a5560;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.form-section {
+    background-color: #E6ECED;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.inputGroup {
+    position: relative;
+    margin-top: 30px;
+}
+
+.radioInputGroup, .checkboxInputGroup {
+    margin: 20px 0;
+    position: relative;
+}
+
+.hidden-form-section {
+    opacity: .6;
+}
+
+.hidden-form-section > div.inputs {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+input {
+    font-size: 20px;
+    color: #000;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+input:focus {
+    outline: none;
+}
+
+#transferStatus, #transferGuarantees {
+    cursor: pointer;
+}
+
+/* active state */
+
+input:focus~label,
+input:valid~label {
+    top: -20px;
+    left: 0;
+    font-size: 15px;
+    color: #0a5560;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #087C89;
+    transition: 0.2s ease-in-out all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+input:focus~.bar:before,
+input:focus~.bar:after {
+    width: 50%;
+}
+
+
+/* radio and checkbox buttons */
+
+.radioButtonGroup, .checkboxButton {
+    height: 42px;
+    margin: 0;
+    padding: 0;
+}
+
+.checkboxGroup {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.checkboxGroup:last-of-type {
+  margin-bottom: 0px;
+}
+
+.radioButton {
+    position: relative;
+    float: left;
+    height: inherit;
+    width: 150px;
+    margin-right: 10px;
+}
+
+.checkboxButton {
+  width: 90%;
+}
+
+.radioButton:last-of-type {
+    margin-right: 0;
+}
+
+.radioButton label,
+.radio-button-group input {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 150px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    opacity: 0.011;
+    z-index: 100;
+    cursor: pointer;
+    height: inherit;
+}
+
+input[type="radio"]:hover+label, input[type="checkbox"]:hover+label {
+    background-color: #f2f2f2;
+    text-decoration: underline;
+}
+
+input[type="radio"]:checked+label, input[type="checkbox"]:checked+label {
+    background-color: #007C8B;
+    color: #fff;
+}
+
+input[type="radio"]:checked:hover+label, input[type="checkbox"]:checked:hover+label {
+    text-decoration: underline;
+}
+
+.radioButton label, .checkboxButton label {
+    background-color: #fff;
+    border: 1px solid #007C8B;
+    border-radius: 3px;
+    z-index: 90;
+}
+
+.radioButton input:valid~label, .checkboxButton input:valid~label {
+    top: 0;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.radioButton input:valid~label {
+  text-align: center;
+}
+
+.checkboxButton input:valid~label {
+  text-align: left;
+  padding-left: 50px;
+  width: inherit;
+  height: inherit;
+}
+
+span.checkbox::before {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  content: ' ';
+  left: 10px;
+  top: 11px;
+  border: 1px solid #007C8B;
+}
+
+input[type="checkbox"]:checked + label span.checkbox::before{
+  border: none;
+  content: '\f00c';
+  font-size: 20px;
+  top: 10px;
+  font-family: FontAwesome;
+}
+
+/* form add ons */
+
+.amount {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 30px;
+    color: #007C8B;
+}
+
+.amount+label {
+    left: 30px;
+}
+
+.prepend {
+    padding-left: 30px;
+}
+
+.inputGroup.prepend-label label {
+    left: 30px;
+}
+
+.more-info-content {
+    position: absolute;
+    right: 20px;
+    max-width: 340px;
+    display: none;
+    z-index: 999;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+    background-color: white;
+    font-size: 16px;
+}
+
+.more-info-trigger::before {
+    position: absolute;
+    top: -18px;
+    right: 0px;
+    content: '\f05a';
+    font-family: FontAwesome;
+    font-size: 14px;
+    color: #007C8B;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+.more-info-trigger:hover + div.more-info-content {
+    display: inline-block;
+}
+
+.radioInputGroup .more-info-trigger::before {
+    top: 0;
+}
+
+.checkboxGroup .more-info-trigger::before {
+    top: 0;
+}
+
+.message-success {
+    margin-top: 20px;
+    padding-top: 5px;
+    display: block;
+}
+
+.message-success p::before {
+    content: '\f058';
+    font-family: FontAwesome;
+    font-size: 25px;
+    color: #008616;
+    margin-right: 5px;
+}
+
+/* ledger */
+
+#ledger {
+    margin-left: 20px;
+    max-width: 460px;
+}
+
+#transfer-to {
+    position: fixed;
+    max-width: 460px;
+}
+
+/* info box */
+
+.info-box {
+    background-color: #fff;
+    padding: 20px 0;
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(0,0,0,.5);
+}
+
+.info-box h3 {
+    color: #2880BB;
+}
+
+.current_pensionInfo {
+    padding: 0 20px 10px 20px;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.current_pensionInfo, .current_pensionBenefits, .current_pensionValue {
+    overflow: auto;
+}
+
+.current_pensionBenefits, .current_pensionValue {
+    padding: 10px 0;
+    border-bottom: 1px dashed #c1c1c1;
+    margin: 0 20px;
+}
+
+.current_pensionBenefits ul {
+    padding: 0;
+}
+
+.current_pensionBenefits li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.current_pensionBenefits li::before {
+    content: '\f058';
+    font-family: FontAwesome;
+    color: #008616;
+    margin-right: 5px;
+}
+
+/* help box */
+
+#help-box {
+    background-color: #F3F3F3;
+    padding: 20px;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+#help-box img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.call {
+    margin-bottom: 5px;
+}
+
+.call:before {
+    content: '\f095';
+    margin-right: 8px;
+    font-family: FontAwesome;
+}
+
+.chat a {
+    color: #087C89;
+}
+
+.chat:before {
+    content: '\f086';
+    margin-right: 5px;
+    font-family: FontAwesome;
+}
+
+/*Animation styles*/
+
+.animated {
+  -webkit-animation-duration: .4s;
+  animation-duration: .4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.header-feedback, .header-login{
+    padding-top: 0px;
+    color: #087c89;
+}
+
+.gn-menu-main>li>a {
+    border-bottom: none;
+    padding-top: 15px;
+}
+
+.gn-menu-welcome {
+    padding-top: 35px;
+}
