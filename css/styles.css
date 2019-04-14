@@ -430,6 +430,40 @@ h2 {
     color: #198492;
 }
 
+.hooray {
+    cursor: help;
+    margin: 0 auto;
+    position: relative;
+    width: 120px;
+}
+
+.hooray:hover .popup, .popup:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup { 
+    opacity: 0;
+    left: -180%;
+    position: absolute;
+    text-align: left;
+    top: 10px;
+    transition: opacity .6s ease-in-out;
+    visibility: hidden;
+    width: 500px;
+    z-index: 1;
+}
+
+.popup-content {
+    background: white;
+}
+
+.popup-content p {    
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    padding: 0;
+}
+
 .background-color-light {
     background-color: #fafafa;
 }
@@ -585,6 +619,17 @@ a.grid-item:hover h2 {
 /* END custom classes  */
 
 /* START mobile styles */
+
+@media (max-width: 768px) {
+    .grid__70-30 {
+        grid-template-columns: 100%;
+    }
+
+    .grid__70-30 .main {
+        padding-right: 0;
+    }
+
+}
 
 @media (max-width: 667px) {
     h1 {
