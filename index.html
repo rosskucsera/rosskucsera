@@ -1,81 +1,87 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Ross Kucsera | Designer</title>
-  <meta name="description" content="My name is Ross and I'm a designer who thirves when working with a team taking a project all the way from initial idea to final product. Check out my work and read a little about my background.">
+  <meta name="description"
+    content="My name is Ross and I'm a designer who thirves when working with a team taking a project all the way from initial idea to final product. Check out my work and read a little about my background.">
   <meta name="keywords" content="ui, design, html, css, layout, visual design">
   <meta name="author" content="Ross Kucsera">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="image_url" content="http://www.rosskucsera.com/imgs/rosskucsera.png" />
-   
+
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-   
+
   <link href='http://fonts.googleapis.com/css?family=Dosis:200,300' rel='stylesheet' type='text/css'>
-  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-65247768-1', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-65247768-1', 'auto');
+    ga('send', 'pageview');
 
-</script>
-<script>
-window['_fs_debug'] = false;
-window['_fs_host'] = 'fullstory.com';
-window['_fs_org'] = '5A4FG';
-window['_fs_namespace'] = 'FS';
-(function(m,n,e,t,l,o,g,y){
-    if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return;}
-    g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
-    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
-    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-    g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
-    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-    g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')){
-    d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
-    ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
-})(window,document,window['_fs_namespace'],'script','user');
-</script>
+  </script>
+  <script>
+    window['_fs_debug'] = false;
+    window['_fs_host'] = 'fullstory.com';
+    window['_fs_org'] = '5A4FG';
+    window['_fs_namespace'] = 'FS';
+    (function (m, n, e, t, l, o, g, y) {
+      if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return; }
+      g = m[e] = function (a, b) { g.q ? g.q.push([a, b]) : g._api(a, b); }; g.q = [];
+      o = n.createElement(t); o.async = 1; o.src = 'https://' + _fs_host + '/s/fs.js';
+      y = n.getElementsByTagName(t)[0]; y.parentNode.insertBefore(o, y);
+      g.identify = function (i, v) { g(l, { uid: i }); if (v) g(l, v) }; g.setUserVars = function (v) { g(l, v) };
+      g.identifyAccount = function (i, v) { o = 'account'; v = v || {}; v.acctId = i; g(o, v) };
+      g.clearUserCookie = function (c, d, i) {
+        if (!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')) {
+          d = n.domain; while (1) {
+            n.cookie = 'fs_uid=;domain=' + d +
+              ';path=/;expires=' + new Date(0).toUTCString(); i = d.indexOf('.'); if (i < 0) break; d = d.slice(i + 1)
+          }
+        }
+      };
+    })(window, document, window['_fs_namespace'], 'script', 'user');
+  </script>
 </head>
+
 <body>
-  <div class="container">
-    <nav class="sidebar animated slide-in-left">
-      <div class="title"><img src="imgs/hooray-armadillo.svg" title="hooray armadillo&trade;" alt="hooray armadillo&trade;"/><p>Ross Kucsera</p></div>
-      <a class="current" href="/"><i class="pe-7s-info pe-lg pe-fw"></i>About</a>
-      <a href="/work"><i class="pe-7s-albums pe-lg pe-fw"></i>Work</a>
-      <a href="/cv"><i class="pe-7s-note2 pe-lg pe-fw"></i>Résumé</a>
-    </nav>
-	    <section class="main">
-			<h1>Hi, I'm Ross</h1>
-			<p>I'm a designer with a passion for using technology to create tools that amplify productivity.</p>
-      <p>I follow the iterative design process and thrive when I'm working with a team taking a project all the way from initial idea to final product.</p>
-			<p>My formal training is in graphic communications and print production, but these days I'm pushing pixels around using HTML and CSS.</p>
-       <div class="grid">
-          <a href="/work">
-            <div class="card project">
-              <div class="card-description">
-                <h2><i class="pe-7s-albums pe-3x pe-lg pe-fw"></i></h2>
-                <h3>My Work</h3>
-                <p>Samples of web-based, digital and print projects</p>
-              </div>
-            </div>
-          </a>
-          <a href="/cv">
-            <div class="card project">
-              <div class="card-description">
-                <h2><i class="pe-7s-note2 pe-3x pe-lg pe-fw"></i></h2>
-                <h3>CV/Résumé</h3>
-                <p>A little info about where I've been and what I can do</p>
-              </div>
-            </div>
-          </a>
-        </div>
-		</section>
-	</div>
+  <div class="page-content">
+    <div class="nav-container">
+      <nav class="max-width">
+        <a href="/">Ross Kucsera</a>
+        <a href="/work"><i class="pe-7s-albums pe-lg pe-fw"></i>Work</a>
+        <a href="/about"><i class="pe-7s-info pe-lg pe-fw"></i>About me</a>
+      </nav>
+    </div>
+    <div class="grid max-width margin-top margin-bottom padding-all">
+      <section class="intro align-self-center">
+
+        <svg width="95px" height="42px" viewBox="0 0 95 42">
+          <g transform="translate(0.000000, -4.000000)" fill="#000000">
+            <path
+              d="M-7.10542736e-15,26.7747201 C0.231701848,26.7313345 0.321642028,26.5453247 0.413077058,26.361559 C3.54603484,27.773089 3.90504814,31.9610518 6.60873465,33.8021996 C7.81831795,34.1764632 8.73914594,34.8392166 9.50002491,35.6625467 C13.4028308,36.7225032 17.8395475,36.6344852 20.8586474,34.8354764 C20.4774605,33.5613344 21.8933332,32.8639223 22.0978786,31.7353965 C22.2645545,30.8145733 21.7849566,29.8186979 21.8913401,28.8415232 C21.9852665,27.9795449 22.7899945,27.1210574 22.9240327,26.1548538 C23.029918,25.3893711 22.6131038,24.4929835 22.7174942,23.8810961 C23.0453648,21.9551718 25.2059222,21.0991777 24.9891689,19.1273743 C26.9506621,17.0947313 28.5576265,14.7067746 30.1521338,12.3068495 C33.3304354,10.2512669 36.0762269,7.76332371 39.4456202,5.89948576 C39.9279587,5.74638924 40.6093614,5.75586427 41.0979285,6.10594166 C42.155037,5.57234792 42.1490576,5.04149695 43.3696031,4.86595957 C44.4105175,4.7161045 45.8236496,5.48881806 45.8478163,5.48582594 C46.753945,5.38010456 47.3279676,4.14835079 48.119491,4.03913861 C49.1922955,3.89102895 50.0358895,4.16256333 50.8042428,4.86595957 C51.6817201,3.87631772 54.9240511,3.97505749 55.3478413,5.2791207 C56.760226,4.26030574 59.8099704,4.6323253 60.7173447,5.89948576 C61.4485758,5.49929046 61.9102355,5.90447262 62.78273,5.89948576 C63.6681799,6.91281518 64.930083,6.85297289 66.2933867,7.34617309 C67.2598077,7.69575179 67.708512,8.77191562 68.7715999,9.41297613 C69.4146348,9.8007043 70.3855403,9.76105878 71.0435238,10.2397971 C71.7226842,10.7344933 72.1208128,11.9046594 72.9021214,12.5133054 C73.4185923,12.9154954 74.1166875,12.9374376 74.5544296,13.3401263 C76.1347359,14.7942939 77.0620415,17.1189175 79.3043175,17.8873922 C79.4144382,18.6037543 79.8569139,18.9877423 79.9236839,19.74749 C81.0366002,19.7799046 80.7892025,19.8883688 81.7825307,19.9541953 C81.8136734,14.2093356 86.3355966,9.8460847 92.1087097,11.8931897 C92.4281095,13.889678 89.9170096,14.7808294 89.4237089,16.6471608 C91.6921447,17.3306096 93.0793661,15.3468377 95,14.9935189 C93.9792662,19.4148667 90.8198993,21.6956059 86.9454956,23.2612298 C86.591216,25.6688845 88.0651388,27.6736012 88.3912654,30.0817546 C88.6897372,32.2871923 87.9595027,34.3731947 87.7714006,36.6958236 C87.5107983,39.9220709 88.0885581,43.2824648 86.9454956,45.9968113 C83.0646143,46.120984 81.1507072,42.5935305 79.510856,39.7961528 C76.3504926,39.0321662 75.3815803,36.0747105 72.9021214,34.6287712 C72.6417682,38.3886123 68.731239,38.9359199 65.4672326,38.5559214 C67.680359,38.4404756 70.1927046,40.3998119 69.184677,42.896482 C68.964934,43.1358512 68.2337028,42.9722823 67.9454458,42.6897768 C67.291947,43.1904573 69.0650889,43.7507307 68.3585229,44.3431694 C65.8469247,43.5784348 62.6990184,44.4528802 60.3042677,42.896482 C60.1458135,39.748279 59.3475633,37.240139 57.6195159,35.6625467 C55.2935283,34.5452413 51.5546578,34.842458 49.5652607,33.3887891 C49.3592205,32.4936482 49.795966,32.2418119 49.9780886,31.7353965 C48.6880325,31.408508 49.2837305,32.9693944 48.9458943,33.5954943 C47.2878558,37.1124755 41.4342698,35.163861 37.1739455,36.0759572 C36.8281368,36.4185543 37.009512,37.2892596 36.967407,37.9358057 C39.5462735,38.3173002 40.9310035,39.8943939 41.7172949,42.0696611 C41.4409967,43.0331219 40.2281745,43.0598016 40.2717743,44.3431694 C37.7611727,44.7416193 35.2936726,43.435312 32.0107315,43.9300082 C30.3240417,42.9797626 31.5911767,40.1070834 30.7717494,38.5559214 C28.3456068,38.4352394 25.690503,37.0987616 23.1303221,37.7293498 C21.5305828,38.1235608 20.3384394,39.6620063 19.4128777,40.002858 C16.7221466,40.9942453 12.8352858,40.4923181 10.9455455,39.7961528 C8.57321752,38.922206 5.89469433,36.9713474 4.13052144,35.042431 C2.24252509,32.9786201 1.31671427,30.1570562 -7.10542736e-15,27.6017904 C-7.10542736e-15,27.3260172 -7.10542736e-15,27.0504933 -7.10542736e-15,26.7747201"
+              id="hooray-armadillo"></path>
+          </g>
+        </svg>
+        <h1>Ross Kucsera</h1>
+        <p class="margin-bottom-x4">I'm Ross, a T-shaped designer with deep prototyping and front-end development skills.
+        </p>
+        <a href="work.html" class="margin-left-x2 margin-right-x2">See some of my work ></a>
+        <a href="about.html" class="margin-left-x2 margin-right-x2">Read more about me ></a>
+      </section>
+    </div>
+    <footer class="text-align-center">
+      <span>Made by me in <span class="emoji" role="img" aria-label="Scotland"
+          title="Made in sunny Edinburgh, Scotland">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>  </span>© 2019 Ross Kucsera</span>
+    </footer>
+  </div>
 </body>
+
 </html>

@@ -1,77 +1,160 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>My Work | Ross Kucsera</title>
   <meta name="description" content="Here's a selection of projects I've worked on over the past four and a half years.">
-  <meta name="keywords" content="case studies, work, infographics, white papers, reports, portfolio, ui, design, html, css, layout, visual design">
+  <meta name="keywords"
+    content="case studies, work, infographics, white papers, reports, portfolio, ui, design, html, css, layout, visual design">
   <meta name="author" content="Ross Kucsera">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-   
+
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="advice-spinner/css/spinner-animation.css">
   <link rel="stylesheet" type="text/css" href="css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-  
+
   <link href='http://fonts.googleapis.com/css?family=Dosis:200,300' rel='stylesheet' type='text/css'>
-  <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-65247768-1', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-65247768-1', 'auto');
+    ga('send', 'pageview');
 
-</script>
-<script>
-window['_fs_debug'] = false;
-window['_fs_host'] = 'fullstory.com';
-window['_fs_org'] = '5A4FG';
-window['_fs_namespace'] = 'FS';
-(function(m,n,e,t,l,o,g,y){
-    if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return;}
-    g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
-    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
-    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-    g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
-    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-    g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')){
-    d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
-    ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
-})(window,document,window['_fs_namespace'],'script','user');
-</script>
+  </script>
+  <script>
+    window['_fs_debug'] = false;
+    window['_fs_host'] = 'fullstory.com';
+    window['_fs_org'] = '5A4FG';
+    window['_fs_namespace'] = 'FS';
+    (function (m, n, e, t, l, o, g, y) {
+      if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return; }
+      g = m[e] = function (a, b) { g.q ? g.q.push([a, b]) : g._api(a, b); }; g.q = [];
+      o = n.createElement(t); o.async = 1; o.src = 'https://' + _fs_host + '/s/fs.js';
+      y = n.getElementsByTagName(t)[0]; y.parentNode.insertBefore(o, y);
+      g.identify = function (i, v) { g(l, { uid: i }); if (v) g(l, v) }; g.setUserVars = function (v) { g(l, v) };
+      g.identifyAccount = function (i, v) { o = 'account'; v = v || {}; v.acctId = i; g(o, v) };
+      g.clearUserCookie = function (c, d, i) {
+        if (!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')) {
+          d = n.domain; while (1) {
+            n.cookie = 'fs_uid=;domain=' + d +
+              ';path=/;expires=' + new Date(0).toUTCString(); i = d.indexOf('.'); if (i < 0) break; d = d.slice(i + 1)
+          }
+        }
+      };
+    })(window, document, window['_fs_namespace'], 'script', 'user');
+  </script>
 </head>
+
 <body>
-  <div class="container">
-    <nav class="sidebar">
-      <div class="title"><img src="imgs/hooray-armadillo.svg" title="hooray armadillo&trade;" alt="hooray armadillo&trade;"/><p>Ross Kucsera</p></div>
-      <a href="/"><i class="pe-7s-info pe-lg pe-fw"></i>About</a>
-      <a class="current" href="/work"><i class="pe-7s-albums pe-lg pe-fw"></i>Work</a>
-      <a href="/cv"><i class="pe-7s-note2 pe-lg pe-fw"></i>Résumé</a>
-    </nav>
-    <section class="main">
-      <h1>My Work</h1>
-      <p>My work is split between web, digital and print projects.</p>
-      <p>Take a look at the selection I've included in both sections below.</p>
-      <div class="grid">
-        <a href="/casestudies">
-          <div class="card project">
-            <div class="card-description">
-              <h2><i class="pe-7s-browser pe-3x pe-lg pe-fw"></i></h2>
-              <h3>HTML/CSS based web projects</h3>
+  <div class="page-content">
+    <div class="nav-container">
+      <nav class="max-width">
+        <a href="/">Ross Kucsera</a>
+        <a href="/work"><i class="pe-7s-albums pe-lg pe-fw"></i>Work</a>
+        <a href="/about"><i class="pe-7s-info pe-lg pe-fw"></i>About me</a>
+      </nav>
+    </div>
+    <div class="grid max-width margin-top margin-bottom padding-all">
+      <section class="intro">
+        <i role="img" aria-label="Gallery" class="h1 pe-7s-albums pe-fw"></i>
+        <h1>My Work</h1>
+        <p>With formal training in graphic communications, I have a strong foundation in visual design, while my work
+          over the past eight years has allowed me to hone my skills in user research, protoype design and front-end web
+          development.</p>
+      </section>
+      <section class="grid grid__work margin-top-x2">
+        <!-- <a class="grid-item grid-row-span-2 grid-column-span-3 gradient-deep-aqua" href="">
+          <h2>Digital advice</h2>
+          <img src="imgs/collaborate-collateral.png" />
+          <p class="button">Open</p>
+        </a>
+        <a class="grid-item gradient-light-blue" href="">
+          <h2>CSS animation loading spinner</h2>
+          <div class="animated" style="margin:0 auto;">
+            <div id="income-spinner-wrapper">
+              <div id="loader" class="scale-big">
+                <div class="blue-strokes spin-backward bezier">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="yellow-strokes spin-forward-half">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="blue-fills spin-backward">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
             </div>
           </div>
+          <p class="button">Open</p>
+        </a> -->
+        <a class="grid-item gradient-light-orange" href="work/microinteractions-form.html">
+          <h2>Microinteraction form protoype</h2>
+          <img src="imgs/micro-interactions.png" />
+          <p class="button">Open</p>
         </a>
-        <a href="/digital-print">
-          <div class="card project">
-            <div class="card-description">
-              <h2><i class="pe-7s-notebook pe-3x pe-lg pe-fw"></i></h2>
-              <h3>Digital and print projects</h3>
-            </div>
-          </div>
+        <a class="grid-item gradient-soft-red" href="work/multi-level-menu.html">
+          <h2>Multi-level responsive menu</h2>
+          <img src="imgs/sidetabs-after.gif" />
+          <p class="button">Open</p>
         </a>
-             
-      </div>
-    </section>
+        <a class="grid-item gradient-greenish" href="work/mega-menu.html">
+          <h2>IA and mega menu redesign</h2>
+          <img src="imgs/global-nav-mega-menu.gif" />
+          <p class="button">Open</p>
+        </a>
+        <a class="grid-item gradient-deep-aqua" href="work/pricing-signup.html">
+          <h2>User research project for pricing and sign up</h2>
+          <img src="imgs/user-research-pricing.png" />
+          <p class="button">Open</p>
+        </a>
+        <a class="grid-item gradient-light-blue" href="work/cms-resource-center.html">
+          <h2>CMS resource center wireframe</h2>
+          <img src="imgs/pmi-resource-center.png" />
+          <p class="button">Open</p>
+        </a>
+        <a class="grid-item gradient-light-orange" href="work/data-visualization.html">
+          <h2>Data visualization of survey results</h2>
+          <img src="imgs/2014-pmi-survey-results.gif" />
+          <p class="button">Open</p>
+        </a>
+        <a class="grid-item gradient-soft-red" href="">
+          <h2>Infographic thought leadership content</h2>
+          <img src="imgs/PeopleMatter-Infographic-Hiring.png" />
+          <p class="button">Open</p>
+        </a>
+        <a class="grid-item gradient-greenish" href="">
+          <h2>Reports and white paper thought leadership content</h2>
+          <img src="imgs/PeopleMatter-The-Ultimate-Guide-General-Findings4.png" />
+          <p class="button">Open</p>
+        </a>
+        <a class="grid-item gradient-deep-aqua" href="">
+          <h2>Signage and event collateral</h2>
+          <img src="imgs/collaborate-collateral.png" />
+          <p class="button">Open</p>
+        </a>
+      </section>
+    </div>
+    <footer class="text-align-center">
+      <span>Made by me in <span class="emoji" role="img" aria-label="Scotland"
+          title="Made in sunny Edinburgh, Scotland">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>  </span>© 2019 Ross Kucsera</span>
+    </footer>
+  </div>
   </div>
 </body>
+
 </html>

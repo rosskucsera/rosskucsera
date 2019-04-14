@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Microinteractions within a form work example | Ross Kucsera</title>
+  <meta name="description" content="Here's a selection of projects I've worked on over the past four and a half years.">
+  <meta name="keywords"
+    content="case studies, work, infographics, white papers, reports, portfolio, ui, design, html, css, layout, visual design">
+  <meta name="author" content="Ross Kucsera">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Dosis:200,300' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-65247768-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <script>
+    window['_fs_debug'] = false;
+    window['_fs_host'] = 'fullstory.com';
+    window['_fs_org'] = '5A4FG';
+    window['_fs_namespace'] = 'FS';
+    (function (m, n, e, t, l, o, g, y) {
+      if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return; }
+      g = m[e] = function (a, b) { g.q ? g.q.push([a, b]) : g._api(a, b); }; g.q = [];
+      o = n.createElement(t); o.async = 1; o.src = 'https://' + _fs_host + '/s/fs.js';
+      y = n.getElementsByTagName(t)[0]; y.parentNode.insertBefore(o, y);
+      g.identify = function (i, v) { g(l, { uid: i }); if (v) g(l, v) }; g.setUserVars = function (v) { g(l, v) };
+      g.identifyAccount = function (i, v) { o = 'account'; v = v || {}; v.acctId = i; g(o, v) };
+      g.clearUserCookie = function (c, d, i) {
+        if (!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')) {
+          d = n.domain; while (1) {
+            n.cookie = 'fs_uid=;domain=' + d +
+              ';path=/;expires=' + new Date(0).toUTCString(); i = d.indexOf('.'); if (i < 0) break; d = d.slice(i + 1)
+          }
+        }
+      };
+    })(window, document, window['_fs_namespace'], 'script', 'user');
+  </script>
+</head>
+
+<body>
+  <div class="page-content">
+    <div class="nav-container">
+      <nav class="max-width">
+        <a href="/">Ross Kucsera</a>
+        <a href="/work"><i class="pe-7s-albums pe-lg pe-fw"></i>Work</a>
+        <a href="/about"><i class="pe-7s-info pe-lg pe-fw"></i>About me</a>
+      </nav>
+    </div>
+    <div class="gradient-light-orange padding-all padding-bottom-x2">
+        <section class="grid max-width text-align-center color-white padding-bottom-x2">
+          <h1>Microinteractions form prototype</h1>
+          <p class="padding-top">I designed and coded a clickable prototype to present a brand new format for how customer journeys could be presented.</p>
+        </section>
+        <section class="grid grid__40-40-20 max-width border-radius color-white background-opaque padding-all">
+          <div class="padding-right-x2">
+            <h2>Problem</h2>
+            <p class="smaller">The journey this design was designed to replace is essentially a form that’s split up across individual pages where a user is presented with a single question per screen. Drop off points varied, but to improve overall motivation my hypothesis was to provide context as to why questions were being asked and offer feedback along the way.</p>
+          </div>
+          <div class="padding-right-x2">
+            <h2>Solution</h2>
+            <p class="smaller">I grouped questions into relevant sections to aid in recall of information. Instead of a seemingly never ending series of questions, users now can see upcoming sections which are progressively disclosed as they fill out sections. Micro interactions and a dynamic sidebar help increase motivation to continue.</p>
+          </div>
+          <div>
+            <h2>My role</h2>
+            <ul class="smaller">
+                <li>Design</li>
+                <li>Prototyping</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+          </ul>
+          </div>
+        </section>
+      </div>
+        <div class="max-width">
+            <h2 class="text-align-center margin-top margin-bottom">Check out the interactive prototype</h2>
+            <iframe src="../consolidation-2.0/consolidation-2.0.html" width="1000px" height="1100px;" style="border-radius: 1rem;background-color: rgba(255,255,255,.7);"></iframe>
+          </div>
+    <footer class="text-align-center">
+      <span>Made by me in <span class="emoji" role="img" aria-label="Scotland"
+          title="Made in sunny Edinburgh, Scotland">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>  </span>© 2019 Ross Kucsera</span>
+    </footer>
+  </div>
+  </div>
+</body>
+
+</html>

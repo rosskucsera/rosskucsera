@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Multi-level menu work example | Ross Kucsera</title>
+  <meta name="description" content="Here's a selection of projects I've worked on over the past four and a half years.">
+  <meta name="keywords"
+    content="case studies, work, infographics, white papers, reports, portfolio, ui, design, html, css, layout, visual design">
+  <meta name="author" content="Ross Kucsera">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Dosis:200,300' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-65247768-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <script>
+    window['_fs_debug'] = false;
+    window['_fs_host'] = 'fullstory.com';
+    window['_fs_org'] = '5A4FG';
+    window['_fs_namespace'] = 'FS';
+    (function (m, n, e, t, l, o, g, y) {
+      if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return; }
+      g = m[e] = function (a, b) { g.q ? g.q.push([a, b]) : g._api(a, b); }; g.q = [];
+      o = n.createElement(t); o.async = 1; o.src = 'https://' + _fs_host + '/s/fs.js';
+      y = n.getElementsByTagName(t)[0]; y.parentNode.insertBefore(o, y);
+      g.identify = function (i, v) { g(l, { uid: i }); if (v) g(l, v) }; g.setUserVars = function (v) { g(l, v) };
+      g.identifyAccount = function (i, v) { o = 'account'; v = v || {}; v.acctId = i; g(o, v) };
+      g.clearUserCookie = function (c, d, i) {
+        if (!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')) {
+          d = n.domain; while (1) {
+            n.cookie = 'fs_uid=;domain=' + d +
+              ';path=/;expires=' + new Date(0).toUTCString(); i = d.indexOf('.'); if (i < 0) break; d = d.slice(i + 1)
+          }
+        }
+      };
+    })(window, document, window['_fs_namespace'], 'script', 'user');
+  </script>
+</head>
+
+<body>
+  <div class="page-content">
+    <div class="nav-container">
+      <nav class="max-width">
+        <a href="/">Ross Kucsera</a>
+        <a href="/work"><i class="pe-7s-albums pe-lg pe-fw"></i>Work</a>
+        <a href="/about"><i class="pe-7s-info pe-lg pe-fw"></i>About me</a>
+      </nav>
+    </div>
+    <div class="gradient-soft-red padding-all padding-bottom-x4">
+      <section class="grid max-width text-align-center color-white padding-bottom-x2">
+        <h1>Multi-level responsive menu</h1>
+        <p class="padding-top">I created the original prototype in HTML, CSS and JavaScript and worked directly with our
+          web developer to
+          implement this design. The layout, we called 'sidetabs', houses all possible ways a customer could contact
+          or solve their query. This component has since been added to our design system component library and reused
+          for other sites across the company.</p>
+      </section>
+      <section class="grid grid__40-40-20 max-width border-radius color-white background-opaque padding-all">
+        <div class="padding-right-x2">
+          <h2>Problem</h2>
+          <p class="smaller">The contact area of Standard Life's customer website used to be split over pages titled
+            ‘Contact Us’ and ‘Talk to us.’ The former was a mix of FAQs and a seemingly random set of contact options
+            while the latter was a page with a massive list of phone numbers.</p>
+        </div>
+        <div class="padding-right-x2">
+          <h2>Solution</h2>
+          <p class="smaller">The new singular page guides customers to the best option for contacting Standard Life
+            support depending on their product or issue. This new design has helped reduce false demand to the
+            complaints form that used to be visible at all times on the old ‘Contact us’ page while also increasing the
+            number of customers logging in to solve their issue directly.</p>
+        </div>
+        <div>
+          <h2>My role</h2>
+          <ul class="smaller">
+            <li>Research</li>
+            <li>Stakeholder management</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <section class="max-width text-align-center padding-left padding-right">
+      <h2 class="margin-top-x2">Before</h2>
+      <p class="padding-top padding-bottom">Previously customers were presented with an unfriendly and unhelpful table
+        of all possible numbers for Standard Life.</p>
+      <img class="border-radius box-shadow margin-bottom margin-top" src="../imgs/contact-us-before.jpg" />
+      <h2 class="margin-top-x2">After</h2>
+      <p class="padding-top padding-bottom">Working with the internal Customer Operations team, I grouped the contact
+        categories and options. The new design presents only the relevant number to call based on what has been
+        selected.</p>
+      <img class="border-radius box-shadow margin-bottom margin-top" src="../imgs/sidetabs-after.gif" />
+      <p class="padding-top padding-bottom">It's a fully-responsive design that elegantly adapts to smaller screens,
+        which this page is likely to be viewed on if a customer is trying to phone.</p>
+      <img class="border-radius box-shadow margin-bottom margin-top" src="../imgs/sidetabs-responsive.gif" />
+    </section>
+    <footer class="text-align-center">
+      <span>Made by me in <span class="emoji" role="img" aria-label="Scotland"
+          title="Made in sunny Edinburgh, Scotland">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>  </span>© 2019 Ross Kucsera</span>
+    </footer>
+  </div>
+  </div>
+</body>
+
+</html>
