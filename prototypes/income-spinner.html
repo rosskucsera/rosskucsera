@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Calculate</title>
+    <meta name="description" content="Web Elements Styleguide" />
+    <link rel="stylesheet" href="css/sl-element-library.css" />
+    <link rel="stylesheet" href="css/spinner-animations.css" />
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="we_header">
+        <div class="we_header-content">
+            <!-- Site logo -->
+            <div class="we_header-logo">
+                <a href="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 211.166 46.75">
+                        <title>Logo</title>
+                        <path d="M.357 27.99c0-4.782 2.612-6.817 8.65-6.817 2.068 0 4.58.374 6.173.78-.034.814 0 4.48 0 4.48-1.73-.374-4.172-.647-6.004-.714-1.526-.035-2.476.065-2.985.642-.37.373-.405.812-.405 1.29.068 1.017.78 1.354 2.103 2.136 1.153.678 4.104 2.204 5.495 3.153 2.612 1.765 3.12 3.563 3.12 6.038 0 4.886-2.916 7.123-8.717 7.293-2.646.068-5.19-.337-7.123-.915v-4.272c1.594.237 3.494.476 5.394.61 2.238.102 3.154.033 4.002-.477.576-.373.915-1.22.78-2.068-.17-.813-.51-1.256-1.765-2.068a92.4 92.4 0 0 0-4.138-2.51c-3.63-2.07-4.58-3.46-4.58-6.58zm25.03-4.68v4.444h3.696v3.527h-3.697v9.363c0 .646-.034 1.153.136 1.392.17.237.238.34.712.407.61.034 2.103.034 3.053-.067v3.494c-1.018.27-2.713.405-3.8.372-3.56 0-5.19-1.22-5.19-4.816V31.28h-2.61v-3.526h2.61v-3.562l5.09-.88zm15.53 11.635V33.86c0-.95-.236-1.493-.745-1.866-.577-.407-1.594-.44-2.748-.407-1.56.034-3.596.237-4.783.373v-3.663c1.766-.51 4.41-.814 6.243-.78 4.206.033 7.157 1.798 7.157 6.343v12.145h-4.987V44.92c-1.187.95-2.544 1.322-4.308 1.322-3.596 0-5.36-2.408-5.36-5.394v-.646c.103-4.036 2.68-5.29 7.972-5.29l1.56.033zm0 6.82v-3.9c-1.73-.104-3.02.032-3.662.372-.577.305-.95.78-.95 1.967v.238c.034 1.287.916 1.933 2.272 1.898 1.087-.033 1.73-.306 2.34-.576zM54.79 27.788v1.356c1.525-1.053 2.916-1.63 5.053-1.63 4.104 0 5.63 2.884 5.63 5.972v12.517h-5.12V34.707c0-1.12-.035-1.898-.442-2.374-.54-.61-1.083-.746-2.135-.646-.95.068-2.103.543-2.815.916V46h-5.123V27.79h4.952zm29.776 18.215H79.58v-1.086c-1.187.916-2.375 1.323-4.24 1.323-4.14 0-6.547-2.307-6.547-7.463v-2.61c.034-3.73.95-5.53 2.442-6.955 1.22-1.12 3.053-1.694 5.292-1.73.984 0 2.272.138 2.917.272v-6.072h5.122v24.32zm-5.088-14.45c-.68-.136-2.103-.34-3.053-.136-2 .44-2.544 1.832-2.544 4.952v1.254c.036 2.44.24 3.223.95 3.97.51.54 1.223.745 2.173.745s1.797-.205 2.442-.61l.034-10.178zm17.668 3.392V33.86c0-.95-.237-1.493-.746-1.866-.577-.407-1.594-.44-2.748-.407-1.56.034-3.596.237-4.783.373v-3.663c1.762-.51 4.41-.814 6.24-.78 4.205.033 7.156 1.798 7.156 6.343v12.145H97.28V44.92c-1.187.95-2.543 1.322-4.307 1.322-3.596 0-5.36-2.408-5.36-5.394v-.646c.103-4.036 2.68-5.29 7.972-5.29l1.56.033zm0 6.82v-3.9c-1.73-.104-3.02.032-3.663.372-.577.305-.95.78-.95 1.967v.238c.034 1.287.916 1.933 2.272 1.898 1.086-.033 1.73-.306 2.34-.576zm13.938-14.01v1.322c1.153-1.052 3.188-1.765 5.325-1.527v4.173c-2.14-.136-4.106.407-5.227 1.086V46h-5.122V27.75h5.023zm22.894 18.248h-4.985v-1.086c-1.188.916-2.375 1.323-4.24 1.323-4.14 0-6.547-2.307-6.547-7.463v-2.61c.034-3.73.948-5.53 2.442-6.955 1.222-1.12 3.053-1.694 5.29-1.73.984 0 2.272.138 2.917.272v-6.072h5.123v24.32zm-5.088-14.45c-.68-.136-2.104-.34-3.053-.136-2.002.44-2.545 1.832-2.545 4.952v1.254c.034 2.44.238 3.223.95 3.97.51.54 1.22.745 2.17.745s1.798-.205 2.442-.61l.036-10.178zm17.97 9.937V21.514h5.324V40.88c0 .272.034.374.137.476.138.137.34.17.613.205h7.868v4.31c-2.476.373-7.26.44-9.7.17-1.255-.103-2.374-.407-3.12-1.12s-1.12-1.562-1.12-3.43zm22.078-15.636h-5.12v-4.172h5.12v4.172zm0 20.15h-5.12v-18.25h5.12v18.25zm10.277-19.572v1.322h4.07v3.562h-4.07v14.688h-5.122V31.316h-2.814v-3.562h2.812v-1.086c0-4.51 2.035-5.63 5.53-5.63 1.288 0 2.916.203 3.696.373v3.46c-1.697-.102-3.427-.17-3.835.238-.304.273-.27.68-.27 1.325zm19.535 3.73c1.425 1.898 1.696 3.357 1.696 7.19 0 .237 0 .78-.034 1.053h-10.888c.066 1.967.848 3.392 3.356 3.663 2.138.236 5.056-.34 6.92-.78v3.765c-2.034.78-4.308 1.188-7.056 1.188-5.02 0-8.208-2.542-8.208-8.716v-1.56c.032-5.94 3.595-8.48 8.208-8.48 2.886 0 4.955 1.253 6.006 2.68zm-3.053 4.952c-.034-2.646-1.29-3.765-3.087-3.765-1.73 0-3.053 1.082-3.086 3.763h6.173z"
+                            fill="#0A2F73" />
+                        <path fill="#ffbb00" d="M193.25 14l5.5 10L211 0z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="we_content we_grid we_margin-bottom-x4 we_padding-all" style="overflow:visible;">
+        <h1 class="animate fade-out show we_grid8 we_h1-landing we_line-under we_margin-top-x4 we_margin-bottom-x2">We're ready to calculate your typical yearly income</h1>
+        <div class="we_grid6 animate fade-out show">
+            <p class="we_font-type-light we_font-size-secure-h4">It looks like you may be able to afford a comfortable
+                yearly income, plus some extra. For now, we’ll base this on what people in your circumstances typically
+                spend. You’ll be able to adjust this later on.</p>
+            <button id="calculate" class="we_button we_button__primary we_margin-top-x2 we_margin-bottom-x2">Calculate
+                my income</button>
+        </div>
+        <!-- START Spinner with messages -->
+        <div class="we_grid6 animate fade-out-zoom we_align-right show">
+            <div id="loader-wrapper" class="roll-in">
+                <div id="loader" class="scale-big">
+                    <div class="blue-strokes spin-backward bezier">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="yellow-strokes spin-forward-half">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="blue-fills spin-backward">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <!-- START Messages -->
+                    <h2 class="fade-in-out">Adding up your numbers…</h2>
+                    <h2 class="fade-in-out">Optimising for tax…</h2>
+                    <h2 class="fade-in-out">Creating Smart Suggestions™…</h2>
+                    <!-- END Messages -->
+                </div>
+            </div>
+        </div>
+        <!-- END Spinner with messages -->
+        <div class="we_grid we_grid12 we_margin-all-half we_margin-top-x4 animate fade-in hide">
+            <div class="we_grid we_grid12 we_margin-all-half we_border-radius we_box-shadow we_padding-all-x2">
+                <div class="we_grid1 we_margin-top we_margin-bottom we_padding-none">
+                    <div class="loader-icon">
+                        <div class="blue-stroke">
+                        </div>
+                        <div class="yellow-stroke">
+                        </div>
+                        <div class="blue-fill">
+                        </div>
+                    </div>
+                </div>
+                <div class="we_grid6 we_margin-left we_margin-right">
+                    <h1 class="we_font-size-landing-h4 we_color-grey we_margin-none">Your typical yearly income could
+                        be:</h1>
+                    <p class="we_font-size-landing-h1 we_color-blue we_margin-none we_font-type-regular">£<span>20,000</span></p>
+                    <p class="we_font-type-light we_color-blue-alt">per month: £2,590</p>
+                </div>
+                <div class="we_grid4 we_margin-left">
+                    <div>
+                        <div class="we_border-all we_color-blue we_position-absolute we_position-left">
+                        </div>
+                        <div class="we_margin-left">
+                            <h6>Includes your essentials</h6>
+                            <p>£19,200 per year</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="we_border-all we_color-blue we_position-absolute we_position-left">
+                        </div>
+                        <div class="we_margin-left">
+                            <h6>Figures are after tax</h6>
+                            <p>and adjusted for inflation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="we_grid12 we_border-top we_margin-top">
+                    <p class="we_font-type-light we_font-size-h5 we_padding-top">This leaves you with <span class="we_color-blue-alt">£406,000
+                            remaining</span>. You'll be able to adjust this in a moment.</p>
+                    <a href="" class="we_button we_button__primary">Show loader again</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/sl-element-library.js"></script>
+    <script>
+        var btn = document.querySelector('#calculate');
+        btn.addEventListener('click', loader);
+
+        function loader() {
+            animate();
+            setTimeout(show, 11300);
+            setTimeout(hide, 11300);
+
+            function animate() {
+                var x = document.getElementsByClassName("animate");
+                var i;
+                for (i = 0; i < x.length; i++) {
+                    x[i].classList.add("animated");
+                }
+            }
+
+            function show() {
+                var x = document.getElementsByClassName("hide");
+                var i;
+                for (i = 0; i < x.length; i++) {
+                    x[i].classList.remove("hide");
+                }
+            }
+
+            function hide() {
+                var x = document.getElementsByClassName("show");
+                var i;
+                for (i = 0; i < x.length; i++) {
+                    x[i].classList.add("hide");
+                }
+            }
+
+            // function animateValue(id, start, end, duration) {
+            //     // assumes integer values for start and end
+
+            //     var obj = document.getElementById(id);
+            //     var range = end - start;
+            //     // no timer shorter than 50ms (not really visible any way)
+            //     var minTimer = 50;
+            //     // calc step time to show all interediate values
+            //     var stepTime = Math.abs(Math.floor(duration / range));
+
+            //     // never go below minTimer
+            //     stepTime = Math.max(stepTime, minTimer);
+
+            //     // get current time and calculate desired end time
+            //     var startTime = new Date().getTime();
+            //     var endTime = startTime + duration;
+            //     var timer;
+
+            //     function run() {
+            //         var now = new Date().getTime();
+            //         var remaining = Math.max((endTime - now) / duration, 0);
+            //         var value = Math.round(end - (remaining * range));
+            //         obj.innerHTML = value;
+            //         if (value == end) {
+            //             clearInterval(timer);
+            //         }
+            //     }
+
+            //     timer = setInterval(run, stepTime);
+            //     run();
+
+            //     animateValue("yearly-income", 20000, 22500, 800);
+            // }
+
+        }
+    </script>
+
+
+</body>
+
+
+
+
+</html>
