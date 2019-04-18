@@ -453,13 +453,13 @@ h2 {
 
 .popup { 
     opacity: 0;
-    left: -180%;
+    left: -200%;
     position: absolute;
     text-align: left;
     top: 10px;
     transition: opacity .6s ease-in-out;
     visibility: hidden;
-    width: 80%vw;
+    width: 600px;
     min-width: 310px;
     z-index: 1;
 }
