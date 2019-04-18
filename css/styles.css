@@ -109,6 +109,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+    height: 100vh;
+}
+
 .page-content {
     min-height: 100vh;
     display: grid;
@@ -531,6 +535,10 @@ h2 {
     vertical-align: middle;
 }
 
+.emoji__big {
+    font-size: 10rem;
+}
+
 footer p {
     font-size: 1.6rem;
 }
@@ -607,7 +615,7 @@ footer .emoji:hover {
     grid-template-columns: 40% 40% 20%;
 }
 
-.grid__70-30 {
+.grid__70-30, .grid-item.current.grid-column-span-3 {
     grid-template-columns: 70% 30%;
 }
 
@@ -617,6 +625,7 @@ footer .emoji:hover {
     display: grid;
     grid-template-rows: auto;
     padding: 2rem;
+    position: relative;
     transition: box-shadow .1s ease-in-out;
 }
 
@@ -635,6 +644,23 @@ a.grid-item h2 {
 
 a.grid-item:hover h2 {
     text-decoration: underline;
+}
+
+.grid-item.current p {
+    font-size: 2.0rem;
+    line-height: 150%;
+}
+
+.grid-item.current:before {
+    background-color: orange;
+    border-radius: 2rem;
+    color: white;
+    content: 'CURRENT PROJECT';
+    font-size: 1.4rem;
+    left: 10px;
+    top: -10px;
+    padding: .5rem;
+    position: absolute;
 }
 
 .grid__work .button {
@@ -660,12 +686,39 @@ a.grid-item:hover h2 {
     width: 75px;
 }
 
+.note {
+    max-width: 640px;
+}
+
+.note p {
+    font-size: 2.4rem;
+    line-height: 150%;
+}
+
 /* END custom classes  */
+
+/* START animation styles */
+.wave {
+    animation-name: wave;
+animation-direction: alternate;
+animation-fill-mode: forwards;
+    animation-duration: .5s;
+    animation-iteration-count: 6;
+    transform-origin: 50% 90%;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes wave {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(15deg);}
+  }
+
+/* END animation styles */
 
 /* START mobile styles */
 
 @media (max-width: 768px) {
-    .grid__70-30 {
+    .grid__70-30, .grid-item.current.grid-column-span-3 {
         grid-template-columns: 100%;
     }
 
