@@ -687,12 +687,12 @@ a.grid-item:hover h2 {
 }
 
 .note {
-    max-width: 640px;
+    max-width: 660px;
 }
 
 .note p {
-    font-size: 2.4rem;
-    line-height: 150%;
+    font-size: 2.2rem;
+    line-height: 145%;
 }
 
 /* END custom classes  */
@@ -737,6 +737,14 @@ animation-fill-mode: forwards;
     h2 {
         font-size: 2rem;
         margin-top: 1.5rem;
+    }
+
+    .emoji__big {
+        font-size: 6rem;
+    }
+
+    .note p {
+        font-size: 1.8rem;
     }
 
     p {
