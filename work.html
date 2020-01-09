@@ -46,93 +46,185 @@
         <a href="/about"><i class="pe-7s-info pe-lg pe-fw"></i>About me</a>
       </nav>
     </div>
-    <div class="grid max-width margin-top margin-bottom padding-all">
-      <section class="intro">
+    <div class="grid margin-top margin-bottom">
+      <section class="intro max-width">
         <i role="img" aria-label="Gallery" class="h1 pe-7s-albums pe-fw"></i>
         <h1>My Work</h1>
-        <p>With formal training in graphic communications, I have a strong foundation in visual design, while my
-          professional work over the past eight years has allowed me to become proficient in conducting user and
-          usability research, crafting UX flows and designing high-fidelity prototypes.</p>
+        <p>With a B.S. in Graphic Communications, I have a strong foundation in visual design, while my 8+ years
+          experience as a member of agile product development teams
+          has allowed me to become proficient in conducting user research,
+          crafting UX flows, designing low- and high-fi prototypes and wading into the codebase alongside engineers to
+          help implement designs.</p>
       </section>
-      <div class="grid grid__work margin-top-x2">
-        <div class="grid-item current gradient-deep-aqua grid-column-span-3">
-          <div class="color-white padding-right-x2">
-            <h2 class="margin-top">Retirement planning product</h2>
-            <p>I am lead designer on a product designed to streamline the customer experience of preparing for
-              retirement by augmenting the role of a traditional financial advisor.</p>
-            <p class="margin-top">I've worked remotely with service designers and product owners to conduct user tests
-              and understand customer needs. I've also been able further my front-end development skills creating HTML-
-              and CSS-based prototypes.</p>
-            <p class="margin-top">I can’t share details publicly as it's still in development, but would be happy to
-              discuss it offline.</p>
-          </div>
-          <img class="border-radius" src="imgs/digital-advice-summary.png" />
+      <section class="grid__work-item max-width background-grey padding-all-x2 margin-top-x2">
+        <div class="work-item-content">
+          <h2>Journey design for digital retirement advice</h2>
+          <p class="margin-top">I worked with a team of developers, product owners, marketing colleagues and other
+            designers rapidly iterating on the pilot and launch of Standard Life's
+            online retirement advice service.</p>
+          <p class="margin-top">We designed the service to augment the role of a traditional
+            financial advisor helping customers make sense of the various sources of money they can use to fund their
+            retirement.</p>
+          <p class="margin-top">The project posed interesting design challenges including financial literacy and
+            regulatory
+            requirements. Our key focus was on reducing cognitive load throughout the journey and
+            giving value back as early as possible to keep users from dropping out. When I left the project we had
+            reduced the initial drop off rate from 90% to 10%.</p>
+          <!-- contributed at all points of the design process including initial research, wireframes and
+            prototypes, usability testing, high-fidelity prototypes in addition to front-end development. -->
+          <p class="margin-top-x2"><a class="button" href="work/retirement-advice.html">See more from this project ></a>
+          </p>
         </div>
-      </div>
-      <section class="grid grid__work margin-top-x2">
-        <a class="grid-item gradient-light-blue" href="work/css-animation-loader.html">
-          <h2>Loader with CSS animation</h2>
-          <div class="animated" style="margin:0 auto;">
-            <div id="income-spinner-wrapper">
-              <div id="loader" class="scale-big">
-                <div class="blue-strokes spin-backward bezier">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-                <div class="yellow-strokes spin-forward-half">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-                <div class="blue-fills spin-backward">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
+        <div class="work-item-image">
+          <a class="image-link" href="work/retirement-advice.html"><img src="imgs/digital-advice-summary.png" /></a>
+        </div>
+      </section>
+      <!-- <section class="grid__work-item max-width background-grey padding-all-x2 margin-top-x2">
+        <div class="work-item-content">
+          <h2>Passwordless login workflow</h2>
+          <p class="margin-top">The only way a customer could save their results from a service that provided a rough
+            income number they could expect in retirement was to use their full username and password for an account
+            many accessed only once or twice a year — this was their pension/retirement account after all.</p>
+          <p class="margin-top">To improve the customer experience and increase engagement of our service we introduced
+            a passwordless or "magic link" login option.</p>
+          <p class="margin-top">I created a user flow showing the various paths we had to account and worked directly on
+            the front-end after the backend authentication work had been built.</p>
+          <p class="margin-top-x2"><a class="button" href="work/passwordless-login.html">See workflow and more designs
+              ></a></p>
+          </p>
+        </div>
+        <div class="work-item-image">
+          <a class="image-link" href="work/passwordless-login.html"><img src="imgs/passwordless-login-save.png" /></a>
+        </div>
+      </section> -->
+      <section class="grid__work-item max-width background-grey padding-all-x2 margin-top-x2">
+        <div class="work-item-content margin-right-x4">
+          <div class="work-item-labels margin-bottom">
+            <span class="blue">HTML/CSS</span>
+            <span class="orange">Prototyping</span>
+            <span class="green">User research</span>
+          </div>
+          <h2>CSS-animation loading component</h2>
+          <p class="margin-top">We needed to accomodate for a pause in the journey while a series of calculations ran. I
+            coded this loader that presented messages to the customer to prime them for what was was going on behind-the
+            scenes
+            and get them ready for the information that was about to be presented to them.</p>
+          <p class="margin-top-x2"><a class="button" href="work/css-animation-loader.html">See the spinner in all its
+              glory ></a></p>
+          </p>
+        </div>
+        <div class="work-item-image margin-right-x4">
+          <a class="image-link" href="work/css-animation-loader.html">
+            <div class="animated" style="margin:0 auto;">
+              <div id="income-spinner-wrapper">
+                <div id="loader" class="scale-big">
+                  <div class="blue-strokes spin-backward bezier">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="yellow-strokes spin-forward-half">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <div class="blue-fills spin-backward">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <p class="button">Open</p>
-        </a>
-        <a class="grid-item gradient-light-orange" href="work/microinteractions-form.html">
-          <h2>Microinteraction form protoype</h2>
-          <img src="imgs/micro-interactions.png" />
-          <p class="button">Open</p>
-        </a>
-        <a class="grid-item gradient-soft-red" href="work/multi-level-menu.html">
+          </a>
+        </div>
+      </section>
+      <section class="grid__work-item max-width background-grey padding-all-x2 margin-top-x2">
+        <div class="work-item-content">
+          <h2>Form with microinteractions</h2>
+          <p class="margin-top">I worked as lead designer within an agile development team rapidly iterating on the
+            pilot and initial launch of Standard Life's digital-first retirement advice service.</p>
+          <p class="margin-top-x2"><a class="button" href="work/microinteractions-form.html">Play around with the
+              protoype ></a></p>
+          </p>
+        </div>
+        <div class="work-item-image">
+          <a class="image-link" href="work/microinteractions-form.html"><img src="imgs/micro-interactions.png" /></a>
+        </div>
+      </section>
+      <section class="grid__work-item max-width background-grey padding-all-x2 margin-top-x2">
+        <div class="work-item-content">
           <h2>Multi-level responsive menu</h2>
-          <img src="imgs/sidetabs-after.gif" />
-          <p class="button">Open</p>
-        </a>
-        <a class="grid-item gradient-greenish" href="work/mega-menu.html">
+          <p class="margin-top">Singular page guiding customers to the best option for them to contact Standard Life
+            support.</p>
+          <p class="margin-top">This new format reduced false demand to the complaints forma and increased the number of
+            customers logging in to solve their issue directly.</p class="margin-top">
+          <p class="margin-top-x2"><a class="button" href="work/multi-level-menu.html">Use the protoype ></a></p>
+          </p>
+        </div>
+        <div class="work-item-image">
+          <a class="image-link" href="work/multi-level-menu.html"><img src="imgs/sidetabs-after.gif" /></a>
+        </div>
+      </section>
+      <section class="grid__work-item max-width background-grey padding-all-x2 margin-top-x2">
+        <div class="work-item-content">
           <h2>IA and mega menu redesign</h2>
-          <img src="imgs/global-nav-mega-menu.gif" />
-          <p class="button">Open</p>
-        </a>
-        <a class="grid-item gradient-deep-aqua" href="work/pricing-signup.html">
-          <h2>User research project for pricing and sign up</h2>
-          <img src="imgs/user-research-pricing.png" />
-          <p class="button">Open</p>
-        </a>
-        <a class="grid-item gradient-light-blue" href="work/cms-resource-center.html">
-          <h2>CMS resource center wireframe</h2>
-          <img src="imgs/pmi-resource-center.png" />
-          <p class="button">Open</p>
-        </a>
-        <a class="grid-item gradient-light-orange" href="work/data-visualization.html">
+          <p class="margin-top">Mega menu with drop downs using clear typography and
+            iconography to help improve scanability and consistency of information architecture.</p>
+          <p class="margin-top-x2"><a class="button" href="work/mega-menu.html">See the designs ></a></p>
+          </p>
+        </div>
+        <div class="work-item-image">
+          <a class="image-link" href="work/mega-menu.html"><img src="imgs/global-nav-mega-menu.gif" /></a>
+        </div>
+      </section>
+      <section class="grid__work-item max-width background-grey padding-all-x2 margin-top-x2">
+        <div class="work-item-content">
+          <h2>Pricing page user research</h2>
+          <p class="margin-top">Workflow and mockups for pricing page of SaaS product allowing customers self-select the
+            tier that's right for them, purchase and complete the setup process.</p>
+          <p class="margin-top-x2"><a class="button" href="work/pricing-signup.html">See workflow and designs
+              ></a></p>
+          </p>
+        </div>
+        <div class="work-item-image">
+          <a class="image-link" href="work/pricing-signup.html"><img src="imgs/user-research-pricing.png" /></a>
+        </div>
+      </section>
+      <section class="grid__work-item max-width background-grey padding-all-x2 margin-top-x2">
+        <div class="work-item-content">
+          <h2>CMS-based document center</h2>
+          <p class="margin-top">A central repository for thought leadership content with easy filtering options.</p>
+          <p class="margin-top-x2"><a class="button" href="work/cms-resource-center.html">See case study ></a></p>
+          </p>
+        </div>
+        <div class="work-item-image">
+          <a class="image-link" href="work/cms-resource-center.html"><img src="imgs/pmi-resource-center.png" /></a>
+        </div>
+      </section>
+      <section class="grid__work-item max-width background-grey padding-all-x2 margin-top-x2">
+        <div class="work-item-content">
           <h2>Data visualization of survey results</h2>
-          <img src="imgs/2014-pmi-survey-results.gif" />
-          <p class="button">Open</p>
-        </a>
-        <a class="grid-item gradient-soft-red" href="work/thought-leadership-content.html">
-          <h2>Infographic and other thought leadership content</h2>
-          <img src="imgs/PeopleMatter-Infographic-Hiring.png" />
-          <p class="button">Open</p>
-        </a>
+          <p class="margin-top-x2"><a class="button" href="work/data-visualization.html">See designs ></a></p>
+          </p>
+        </div>
+        <div class="work-item-image">
+          <a class="image-link" href="work/data-visualization.html"><img src="imgs/2014-pmi-survey-results.gif" /></a>
+        </div>
+      </section>
+      <section class="grid__work-item max-width background-grey padding-all-x2 margin-top-x2">
+        <div class="work-item-content">
+          <h2>Infographic and report layouts</h2>
+          <p class="margin-top-x2"><a class="button" href="work/thought-leadership-content.html">See designs ></a></p>
+          </p>
+        </div>
+        <div class="work-item-image">
+          <a class="image-link" href="work/thought-leadership-content.html"><img
+              src="imgs/PeopleMatter-Infographic-Hiring.png" /></a>
+        </div>
       </section>
     </div>
     <footer class="text-align-center">
