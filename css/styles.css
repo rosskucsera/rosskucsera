@@ -455,7 +455,6 @@ h2 {
 .hooray {
     cursor: help;
     margin: 0 auto;
-    position: relative;
     width: 120px;
 }
 
@@ -466,13 +465,13 @@ h2 {
 
 .popup { 
     opacity: 0;
-    left: -200%;
+    left: 1vw;
     position: absolute;
     text-align: left;
     top: 10px;
     transition: opacity .6s ease-in-out;
     visibility: hidden;
-    width: 600px;
+    width: 85%;
     min-width: 310px;
     z-index: 1;
 }
