@@ -80,7 +80,7 @@
           armadillo™</strong> was born!</p>
       <p>The design had a cult following among my classmates and turned into a running joke for the next four
         years where I would somehow work it into every assignment. After college I adopted it as a logo
-        of sorts, alterting the original design to the more modern aesthetic you see here.</p>
+        of sorts, altering the original design to the more modern aesthetic you see here.</p>
     </div>
   </div>
   <script>
@@ -93,8 +93,13 @@
     }
 
     function hide() {
-      modal.style.display = "none";
-      document.getElementById("page-content").classList.remove("blur");
+      document.getElementById("hooray-content").classList.remove("fadeInUp");
+      document.getElementById("hooray-content").classList.add("fadeOutDown");
+      setTimeout(function(){ 
+        modal.style.display = "none";
+        document.getElementById("hooray-content").classList.remove("fadeOutDown");
+        document.getElementById("page-content").classList.remove("blur");
+      }, 450);
     }
 
     window.onclick = function (event) {
