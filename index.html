@@ -9,35 +9,34 @@
   <meta name="author" content="Ross Kucsera">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="image_url" content="http://www.rosskucsera.com/imgs/rosskucsera.png" />
-
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="css/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-<link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <script>
-window['_fs_debug'] = false;
-window['_fs_host'] = 'fullstory.com';
-window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
-window['_fs_org'] = '5A4FG';
-window['_fs_namespace'] = 'FS';
-(function(m,n,e,t,l,o,g,y){
-    if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
-    g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
-    o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
-    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-    g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
-    g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
-    g.log = function(a,b){g("log",[a,b])};
-    g.consent=function(a){g("consent",!arguments.length||a)};
-    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-    g.clearUserCookie=function(){};
-    g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
-    if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
-})(window,document,window['_fs_namespace'],'script','user');
-</script>
+    window['_fs_debug'] = false;
+    window['_fs_host'] = 'fullstory.com';
+    window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+    window['_fs_org'] = '5A4FG';
+    window['_fs_namespace'] = 'FS';
+    (function (m, n, e, t, l, o, g, y) {
+      if (e in m) { if (m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); } return; }
+      g = m[e] = function (a, b, s) { g.q ? g.q.push([a, b, s]) : g._api(a, b, s); }; g.q = [];
+      o = n.createElement(t); o.async = 1; o.crossOrigin = 'anonymous'; o.src = 'https://' + _fs_script;
+      y = n.getElementsByTagName(t)[0]; y.parentNode.insertBefore(o, y);
+      g.identify = function (i, v, s) { g(l, { uid: i }, s); if (v) g(l, v, s) }; g.setUserVars = function (v, s) { g(l, v, s) }; g.event = function (i, v, s) { g('event', { n: i, p: v }, s) };
+      g.shutdown = function () { g("rec", !1) }; g.restart = function () { g("rec", !0) };
+      g.log = function (a, b) { g("log", [a, b]) };
+      g.consent = function (a) { g("consent", !arguments.length || a) };
+      g.identifyAccount = function (i, v) { o = 'account'; v = v || {}; v.acctId = i; g(o, v) };
+      g.clearUserCookie = function () { };
+      g._w = {}; y = 'XMLHttpRequest'; g._w[y] = m[y]; y = 'fetch'; g._w[y] = m[y];
+      if (m[y]) m[y] = function () { return g._w[y].apply(this, arguments) };
+    })(window, document, window['_fs_namespace'], 'script', 'user');
+  </script>
 </head>
 
 <body>
-  <div class="page-content">
+  <div id="page-content" class="page-content">
     <div class="nav-container">
       <nav class="max-width">
         <a href="/">Ross Kucsera</a>
@@ -47,7 +46,7 @@ window['_fs_namespace'] = 'FS';
     </div>
     <div class="grid max-width margin-top margin-bottom padding-all">
       <section class="intro align-self-center" style="position: relative;">
-        <div class="hooray">
+        <button class="tada margin-bottom" onclick="show()">
           <svg width="95px" height="42px" viewBox="0 0 95 42">
             <g transform="translate(0.000000, -4.000000)" fill="#000000">
               <path
@@ -55,23 +54,7 @@ window['_fs_namespace'] = 'FS';
                 id="hooray-armadillo"></path>
             </g>
           </svg>
-          <div class="popup padding-all-x2">
-            <div class="popup-content padding-all border-radius box-shadow">
-              <h2>What’s this armadillo all about?</h2>
-              <p class="margin-bottom">One of the first assignments in my graphic communications curriculum at Clemson was
-                to come up with a design for a set of stickers and print them on a small press.</p>
-              <p class="margin-bottom">For this particular project, the design was secondary to the technical side of
-                creating the plates and operating the press. But I thought I’d try and have some fun with the design
-                anyway and come up with something unique anyway.</p>
-              <p class="margin-bottom">Armadillos were on my mind since I had just come back from visiting my parents
-                who were living in Texas. Also, Red Stripe beer had a commercial at the time with the tagline “hooray
-                beer!” Somehow, I saw the potential for a mashup of these two very unrelated things and so <strong>hooray
-                armadillo™</strong> was born!</p>
-              <p>The design had a cult following among my classmates and it turned into a running joke for the next four
-                years where I would attempt to work it into every assignment somehow. After college I adopted it as a logo of sorts, alterting the original design a bit to match a more modern aesthetic.</p>
-            </div>
-          </div>
-        </div>
+        </button>
         <h1>Ross Kucsera</h1>
         <p class="margin-bottom-x4">Hi, I'm Ross, a T-shaped designer with deep prototyping and front-end development
           skills.
@@ -79,12 +62,54 @@ window['_fs_namespace'] = 'FS';
         <a href="work.html" class="margin-left-x2 margin-right-x2">See some of my work ></a>
         <a href="about.html" class="margin-left-x2 margin-right-x2">Read more about me ></a>
       </section>
-      </div>
-      <footer class="text-align-center">
-        <span>Designed, built and hosted by me <span class="emoji" role="img" aria-label="laptop"
-            title="Designed, built and hosted by Ross">💻</span> © 2020 Ross Kucsera</span>
+    </div>
+    <footer class="text-align-center">
+      <span>Designed, built and hosted by me <span class="emoji" role="img" aria-label="laptop"
+          title="Designed, built and hosted by Ross">💻</span> © 2020 Ross Kucsera</span>
     </footer>
-      </div>
+  </div>
+  <div id="hooray">
+    <div id="hooray-content" class="grid max-width margin-top margin-bottom padding-all-x2" style="max-width:540px;">
+      <button class="close-overlay" onclick="hide()">╳</button>
+      <h2 class="margin-bottom">What's with the armadillo?</h2>
+      <p class="margin-bottom">One of the first assignments in my Graphic Communications curriculum at Clemson was
+        to come up with a design for a set of stickers and print them on a small flexographic press.</p>
+      <p class="margin-bottom">After a trip to Texas, armadillos were on my mind. Also, Red Stripe beer had a commercial
+        at the time with the tagline “hooray
+        beer!” Somehow, I saw the potential for a mashup of these two very unrelated things and so <strong>hooray
+          armadillo™</strong> was born!</p>
+      <p>The design had a cult following among my classmates and turned into a running joke for the next four
+        years where I would somehow work it into every assignment. After college I adopted it as a logo
+        of sorts, alterting the original design to the more modern aesthetic you see here.</p>
+    </div>
+  </div>
+  <script>
+    var modal = document.getElementById('hooray');
+
+    function show() {
+      document.getElementById('hooray').style.display = 'block';
+      document.getElementById("hooray-content").classList.add("fadeInUp")
+      document.getElementById("page-content").classList.add("blur");
+    }
+
+    function hide() {
+      modal.style.display = "none";
+      document.getElementById("page-content").classList.remove("blur");
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        hide();
+      }
+    }
+
+    window.onkeyup = function(event) {
+      if (event.keyCode == 27) {
+        hide();
+      }
+    }
+  </script>
+
 </body>
 
 </html>
