@@ -46,7 +46,7 @@
     </div>
     <div class="grid max-width margin-top margin-bottom padding-all">
       <section class="intro align-self-center" style="position: relative;">
-        <button class="tada margin-bottom" onclick="show()">
+        <button id="hooray-button" class="tada margin-bottom" onclick="show()">
           <svg width="95px" height="42px" viewBox="0 0 95 42">
             <g transform="translate(0.000000, -4.000000)" fill="#000000">
               <path
@@ -88,8 +88,9 @@
 
     function show() {
       document.getElementById('hooray').style.display = 'block';
-      document.getElementById("hooray-content").classList.add("fadeInUp")
+      document.getElementById("hooray-content").classList.add("fadeInUp");
       document.getElementById("page-content").classList.add("blur");
+      document.getElementById("hooray-button").classList.remove("tada");
     }
 
     function hide() {
