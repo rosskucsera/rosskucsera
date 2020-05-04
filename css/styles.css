@@ -479,6 +479,10 @@ button {
     cursor: pointer;
 }
 
+#hooray-button {
+    background-color: white;
+}
+
 #hooray-content {
     background-color: rgba(255,255,255,0.5);
     border: 2px solid #198492;
