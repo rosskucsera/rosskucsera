@@ -1067,6 +1067,7 @@ a.grid-item:hover h2 {
 
     .intro p {
         padding: 10px;
+        width: 360px;
     }
 
     .intro a {
